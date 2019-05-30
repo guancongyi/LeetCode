@@ -22,18 +22,32 @@ public:
 	ListNode* swapPairs(ListNode* head) {
 		int count = 1;
 		ListNode* last = nullptr;
+		ListNode* parent = nullptr;
 		ListNode* curr = head;
-		ListNode* next = curr->next;
-		ListNode* newHead = next;
+		if (head == NULL) { return NULL; }
+		ListNode* newHead = curr->next;
 
 		while (curr != nullptr) {
-			
-			if (count % 2 == 0) {
-				last->next = curr->next;
+			ListNode* temp = curr;
+			ListNode* temp2 = curr->next;
+			if (count == 1) {
+				if (curr->next == NULL) { return curr; }
+				curr->next = curr->next->next;
+				parent = curr;
+			}
+			else if (count % 2 == 0) {
 				curr->next = last;
 			}
-			last = curr;
-			curr = last->next;
+			else {
+				if (curr->next != NULL) {
+					parent->next = curr->next;
+					curr->next = curr->next->next;
+					parent = curr;
+				}
+				
+			}
+			last = temp;
+			curr = temp2;
 			count++;
 		}
 		return newHead;

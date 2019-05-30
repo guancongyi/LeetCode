@@ -33,13 +33,18 @@ void testSwapNodesInPair() {
 		i++;
 	}
 	
-	while (first != nullptr) {
-		cout << first->val << endl;
-		first = first->next;
-	}
+	//while (first != nullptr) {
+	//	cout << first->val << endl;
+	//	first = first->next;
+	//}
 
 	SolutionSwapNodesInPairs s;
+	ListNode* ret = s.swapPairs(first);
 
+	while (ret != nullptr) {
+		cout << ret->val << endl;
+		ret = ret->next;
+	}
 }
 
 int main() {
