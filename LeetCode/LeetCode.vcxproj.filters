@@ -26,5 +26,8 @@
     <ClInclude Include="SwapNodesInPairs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MergeTwoSortedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

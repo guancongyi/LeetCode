@@ -44,7 +44,6 @@ public:
 					curr->next = curr->next->next;
 					parent = curr;
 				}
-				
 			}
 			last = temp;
 			curr = temp2;

@@ -118,6 +118,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MergeTwoSortedList.h" />
     <ClInclude Include="SwapNodesInPairs.h" />
     <ClInclude Include="TwoSum.h" />
   </ItemGroup>
