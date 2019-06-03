@@ -29,5 +29,8 @@
     <ClInclude Include="MergeTwoSortedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ReverseList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

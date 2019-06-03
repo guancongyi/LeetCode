@@ -2,18 +2,20 @@
 #include"TwoSum.h"
 #include"SwapNodesInPairs.h"
 #include"MergeTwoSortedList.h"
+#include"ReverseList.h"
 
 using namespace std;
 void testSwapNodesInPair();
 void testTwoSum();
 void testMergeTwoSortedList();
-
+void testReverseList();
 
 int main() {
 	
 	//testTwoSum();
 	//testSwapNodesInPair();
-	testMergeTwoSortedList();
+	//testMergeTwoSortedList();
+	testReverseList();
 	return 0;
 }
 
@@ -58,16 +60,6 @@ void testMergeTwoSortedList()
 	curr2->next = new ListNode(9);
 	curr2 = curr2->next;
 
-	//while (first != nullptr) {
-	//	cout << first->val << endl;
-	//	first = first->next;
-	//}
-	//cout << " " << endl;
-	//while (second != nullptr) {
-	//	cout << second->val << endl;
-	//	second = second->next;
-	//}
-
 	SolutionMergeTwoSortedLists s;
 	ListNode* ret = s.mergeTwoLists(first, second);
 
@@ -75,6 +67,29 @@ void testMergeTwoSortedList()
 		cout << ret->val << endl;
 		ret = ret->next;
 	}
+}
+
+void testReverseList()
+{
+	ListNode* curr = new ListNode(1);
+	ListNode* first = curr;
+	curr->next = new ListNode(2);
+	curr = curr->next;
+	curr->next = new ListNode(3);
+	curr = curr->next;
+	curr->next = new ListNode(4);
+	curr = curr->next;
+	curr->next = new ListNode(5);
+	curr = curr->next;
+
+	ReverseListIter s;
+	ListNode* ret = s.reverseListRecursive(first);
+
+	while (ret != nullptr) {
+		cout << ret->val << endl;
+		ret = ret->next;
+	}
+
 }
 
 void testSwapNodesInPair() {

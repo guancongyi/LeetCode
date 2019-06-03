@@ -4,6 +4,15 @@
 
    Input: 1->2->4, 1->3->4
    Output: 1->1->2->3->4->4
+
+   switching between two lists.
+   if n1 <= n2:
+	the curr pointer will point to the first list,
+	then move n1 pointer up by 1 position
+   else:
+    the curr pointer will point to the second list,
+	then move n2 pointer up by 1 position
+
 */
 
 class SolutionMergeTwoSortedLists {
