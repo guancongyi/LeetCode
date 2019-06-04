@@ -3,19 +3,24 @@
 #include"SwapNodesInPairs.h"
 #include"MergeTwoSortedList.h"
 #include"ReverseList.h"
+#include"middleNode.h"
+#include"NextLargerNodes.h"
 
 using namespace std;
 void testSwapNodesInPair();
 void testTwoSum();
 void testMergeTwoSortedList();
 void testReverseList();
+void testNextLargerNodes();
+
 
 int main() {
 	
 	//testTwoSum();
 	//testSwapNodesInPair();
 	//testMergeTwoSortedList();
-	testReverseList();
+	//testReverseList();
+	testNextLargerNodes();
 	return 0;
 }
 
@@ -89,6 +94,30 @@ void testReverseList()
 		cout << ret->val << endl;
 		ret = ret->next;
 	}
+
+}
+
+void testNextLargerNodes()
+{
+	ListNode* curr = new ListNode(1);
+	ListNode* first = curr;
+	curr->next = new ListNode(2);
+	curr = curr->next;
+	curr->next = new ListNode(3);
+	curr = curr->next;
+	curr->next = new ListNode(4);
+	curr = curr->next;
+	curr->next = new ListNode(5);
+	curr = curr->next;
+
+	SolutionNextLargerNodes s;
+	vector<int> ret = s.nextLargerNodes(first);
+
+	for (size_t i = 0; i < ret.size(); i++)
+	{
+		cout << ret[i] << endl;
+	}
+
 
 }
 

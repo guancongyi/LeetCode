@@ -32,5 +32,11 @@
     <ClInclude Include="ReverseList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="middleNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NextLargerNodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
