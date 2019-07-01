@@ -5,6 +5,7 @@
 #include"ReverseList.h"
 #include"middleNode.h"
 #include"NextLargerNodes.h"
+#include"MaxArea.h"
 
 using namespace std;
 void testSwapNodesInPair();
@@ -13,6 +14,8 @@ void testMergeTwoSortedList();
 void testReverseList();
 void testNextLargerNodes();
 
+void testMaxArea();
+
 
 int main() {
 	
@@ -20,7 +23,8 @@ int main() {
 	//testSwapNodesInPair();
 	//testMergeTwoSortedList();
 	//testReverseList();
-	testNextLargerNodes();
+	//testNextLargerNodes();
+	testMaxArea();
 	return 0;
 }
 
@@ -118,6 +122,26 @@ void testNextLargerNodes()
 		cout << ret[i] << endl;
 	}
 
+
+}
+
+void testMaxArea()
+{
+	vector<int> test;
+	test.push_back(1);
+	test.push_back(8);
+	test.push_back(6);
+	test.push_back(2);
+	test.push_back(5);
+	test.push_back(4);
+	test.push_back(8);
+	test.push_back(3);
+	test.push_back(7);
+
+	SolutionMaxArea s;
+	int rslt = s.maxArea(test);
+
+	cout << "Solution is:" << rslt;
 
 }
 
