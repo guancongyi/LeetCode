@@ -7,6 +7,7 @@
 #include"NextLargerNodes.h"
 #include"MaxArea.h"
 #include"Subsets.h"
+#include"FlipAndInvertImage.h"
 
 using namespace std;
 void testSwapNodesInPair();
@@ -16,6 +17,7 @@ void testReverseList();
 void testNextLargerNodes();
 void testMaxArea();
 void testSubsets();
+void testFlipAndInvertImage();
 
 
 
@@ -27,7 +29,8 @@ int main() {
 	//testReverseList();
 	//testNextLargerNodes();
 	//testMaxArea();
-	testSubsets();
+	//testSubsets();
+	testFlipAndInvertImage();
 	return 0;
 }
 
@@ -158,6 +161,25 @@ void testSubsets()
 	test.push_back(5);
 	Subsets s;
 	vector<vector<int>> ret = s.subsetss(test);
+	for (size_t i = 0; i < ret.size(); i++)
+	{
+		for (size_t j = 0; j < ret[i].size(); j++) {
+			cout << ret[i][j];
+		}
+		cout << endl;
+	}
+}
+
+void testFlipAndInvertImage()
+{
+	vector<vector<int>> test;
+	test.push_back({ 1, 1, 0 });
+	test.push_back({ 1, 0, 1 });
+	test.push_back({ 0, 0, 0 });
+	//test.push_back({ 0, 1, 0 });
+	//test.push_back({ 0, 1, 0 });
+	FlipAndInvertImageSolution s;
+	vector<vector<int>> ret = s.flipAndInvertImage(test);
 	for (size_t i = 0; i < ret.size(); i++)
 	{
 		for (size_t j = 0; j < ret[i].size(); j++) {

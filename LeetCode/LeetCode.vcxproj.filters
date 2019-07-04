@@ -44,5 +44,8 @@
     <ClInclude Include="Subsets.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FlipAndInvertImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

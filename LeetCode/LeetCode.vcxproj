@@ -118,6 +118,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FlipAndInvertImage.h" />
     <ClInclude Include="MaxArea.h" />
     <ClInclude Include="middleNode.h" />
     <ClInclude Include="NextLargerNodes.h" />
