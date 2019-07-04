@@ -10,8 +10,8 @@ n^2
 
 method 2:
 left and right pointer
-1. check left and right
-2. check left left, and right right
+1. left move if left is smaller
+2. right move is right is smaller
 
 */
 

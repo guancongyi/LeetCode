@@ -123,6 +123,7 @@
     <ClInclude Include="NextLargerNodes.h" />
     <ClInclude Include="ReverseList.h" />
     <ClInclude Include="MergeTwoSortedList.h" />
+    <ClInclude Include="Subsets.h" />
     <ClInclude Include="SwapNodesInPairs.h" />
     <ClInclude Include="TwoSum.h" />
   </ItemGroup>

@@ -6,6 +6,7 @@
 #include"middleNode.h"
 #include"NextLargerNodes.h"
 #include"MaxArea.h"
+#include"Subsets.h"
 
 using namespace std;
 void testSwapNodesInPair();
@@ -13,8 +14,9 @@ void testTwoSum();
 void testMergeTwoSortedList();
 void testReverseList();
 void testNextLargerNodes();
-
 void testMaxArea();
+void testSubsets();
+
 
 
 int main() {
@@ -24,7 +26,8 @@ int main() {
 	//testMergeTwoSortedList();
 	//testReverseList();
 	//testNextLargerNodes();
-	testMaxArea();
+	//testMaxArea();
+	testSubsets();
 	return 0;
 }
 
@@ -143,6 +146,25 @@ void testMaxArea()
 
 	cout << "Solution is:" << rslt;
 
+}
+
+void testSubsets()
+{
+	vector<int> test;
+	test.push_back(1);
+	test.push_back(2);
+	test.push_back(3);
+	test.push_back(4);
+	test.push_back(5);
+	Subsets s;
+	vector<vector<int>> ret = s.subsetss(test);
+	for (size_t i = 0; i < ret.size(); i++)
+	{
+		for (size_t j = 0; j < ret[i].size(); j++) {
+			cout << ret[i][j];
+		}
+		cout << endl;
+	}
 }
 
 void testSwapNodesInPair() {

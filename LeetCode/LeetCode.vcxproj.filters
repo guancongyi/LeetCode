@@ -38,5 +38,11 @@
     <ClInclude Include="NextLargerNodes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MaxArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Subsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
