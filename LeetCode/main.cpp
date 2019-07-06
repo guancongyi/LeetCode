@@ -8,8 +8,10 @@
 #include"MaxArea.h"
 #include"Subsets.h"
 #include"FlipAndInvertImage.h"
+#include"MaxAreaOfIsland.h"
 
 using namespace std;
+
 void testSwapNodesInPair();
 void testTwoSum();
 void testMergeTwoSortedList();
@@ -18,6 +20,7 @@ void testNextLargerNodes();
 void testMaxArea();
 void testSubsets();
 void testFlipAndInvertImage();
+void testMaxAreaOfIsland();
 
 
 
@@ -30,7 +33,8 @@ int main() {
 	//testNextLargerNodes();
 	//testMaxArea();
 	//testSubsets();
-	testFlipAndInvertImage();
+	//testFlipAndInvertImage();
+	testMaxAreaOfIsland();
 	return 0;
 }
 
@@ -187,6 +191,30 @@ void testFlipAndInvertImage()
 		}
 		cout << endl;
 	}
+}
+
+void testMaxAreaOfIsland()
+{
+	vector<vector<int>> test;
+
+	test.push_back({ 1,1,0,0,0 });
+	test.push_back({ 1,1,0,0,0 });
+	test.push_back({ 0,0,0,1,1 });
+	test.push_back({ 0,0,0,1,1 });
+
+	/*test.push_back({ 0,0,1,0,0,0,0,1,0,0,0,0,0 });
+	test.push_back({ 0,0,0,0,0,0,0,1,1,1,0,0,0 });
+	test.push_back({ 0,1,1,0,1,0,0,0,0,0,0,0,0 });
+	test.push_back({ 0,1,0,0,1,1,0,0,1,0,1,0,0 });
+	test.push_back({ 0,1,0,0,1,1,0,0,1,1,1,0,0 });*/
+
+	//test.push_back({ 0,0,0,0,0,0,0,0,0,0,1,0,0 });
+	//test.push_back({ 0,0,0,0,0,0,0,1,1,1,0,0,0 });
+	//test.push_back({ 0,0,0,0,0,0,0,1,1,0,0,0,0 });
+
+	MaxAreaOfIslandSolution s;
+	int ret = s.maxAreaOfIsland(test);
+	cout << ret;
 }
 
 void testSwapNodesInPair() {
