@@ -118,6 +118,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FindDuplicates.h" />
     <ClInclude Include="FlipAndInvertImage.h" />
     <ClInclude Include="MaxArea.h" />
     <ClInclude Include="MaxAreaOfIsland.h" />

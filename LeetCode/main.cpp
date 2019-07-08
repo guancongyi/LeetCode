@@ -9,6 +9,7 @@
 #include"Subsets.h"
 #include"FlipAndInvertImage.h"
 #include"MaxAreaOfIsland.h"
+#include"FindDuplicates.h"
 
 using namespace std;
 
@@ -21,7 +22,7 @@ void testMaxArea();
 void testSubsets();
 void testFlipAndInvertImage();
 void testMaxAreaOfIsland();
-
+void testDuplicates();
 
 
 int main() {
@@ -35,6 +36,7 @@ int main() {
 	//testSubsets();
 	//testFlipAndInvertImage();
 	//testMaxAreaOfIsland();
+	testDuplicates();
 	return 0;
 }
 
@@ -215,6 +217,17 @@ void testMaxAreaOfIsland()
 	MaxAreaOfIslandSolution s;
 	int ret = s.maxAreaOfIsland(test);
 	cout << ret;
+}
+
+void testDuplicates()
+{
+	vector<int> test({ 1,2,3,4,3,3 });
+	FindDuplicatesSolution s;
+	vector<int> ret = s.findDuplicates(test);
+
+	for (size_t j = 0; j < ret.size(); j++) {
+		cout << ret[j];
+	}
 }
 
 void testSwapNodesInPair() {

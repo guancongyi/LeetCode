@@ -50,5 +50,8 @@
     <ClInclude Include="MaxAreaOfIsland.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FindDuplicates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
