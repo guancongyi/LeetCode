@@ -34,7 +34,7 @@ int main() {
 	//testMaxArea();
 	//testSubsets();
 	//testFlipAndInvertImage();
-	testMaxAreaOfIsland();
+	//testMaxAreaOfIsland();
 	return 0;
 }
 

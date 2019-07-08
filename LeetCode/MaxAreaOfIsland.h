@@ -11,6 +11,11 @@
 Given the above grid, return 6. 
 Note the answer is not 11, because the island must be connected 4-directionally.
 
+Solution:
+DFS:
+iterate through every number in the matrix,
+whenever see 1, the DFS will start, and mark every node it visited.
+
 */
 
 class MaxAreaOfIslandSolution {
