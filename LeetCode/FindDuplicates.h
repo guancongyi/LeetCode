@@ -7,13 +7,26 @@ Could you do it without extra space and in O(n) runtime?
 
 
 Solution:
-[4,3,2,7,8,2,3,1]
-
 switch each number to its position until there's
-a duplicate
+a duplicate.
 
+[4,3,2,7,8,2,3,1]
+[7,3,2,4,8,2,3,1]
+[3,3,2,4,8,2,7,1]
+[2,3,3,4,8,2,7,1]
+[3,2,3,4,8,2,7,1]
+[x,2,x,4,8,2,7,1]
 
-123454
+[x,2,x,4,8,2,7,1]
+[x,2,x,4,8,2,7,1]
+
+[x,2,x,4,8,2,7,1]
+[x,2,x,4,8,2,7,1]
+
+[x,2,x,4,1,2,7,8]
+
+[1,2,x,4,x,2,7,8]
+[1,x,x,4,x,x,7,8]
 */
 
 class FindDuplicatesSolution {
@@ -29,17 +42,14 @@ public:
 				continue;
 			}
 			int b = nums[a-1];
+			if (id == a - 1) {
+				id++;
+				continue;
+			}
 			if (a == b ) {
-				if (id == a - 1) {
-					id++;
-					continue;
-				}
-				else {
-					nums[a - 1] = -1;
-					ret.push_back(a);
-					id++;
-				}
-				
+				nums[a - 1] = -1;
+				ret.push_back(a);
+				id++;
 			}
 			else {
 				nums[id] = b;
