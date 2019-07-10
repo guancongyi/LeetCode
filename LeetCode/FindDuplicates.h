@@ -27,6 +27,10 @@ a duplicate.
 
 [1,2,x,4,x,2,7,8]
 [1,x,x,4,x,x,7,8]
+
+better solution:
+negation
+double negation will be positive
 */
 
 class FindDuplicatesSolution {

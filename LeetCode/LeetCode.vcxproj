@@ -118,6 +118,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CandyCrush.h" />
     <ClInclude Include="FindDuplicates.h" />
     <ClInclude Include="FlipAndInvertImage.h" />
     <ClInclude Include="MaxArea.h" />
@@ -129,6 +130,7 @@
     <ClInclude Include="Subsets.h" />
     <ClInclude Include="SwapNodesInPairs.h" />
     <ClInclude Include="TwoSum.h" />
+    <ClInclude Include="ValidParentheses.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

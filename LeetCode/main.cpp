@@ -10,6 +10,8 @@
 #include"FlipAndInvertImage.h"
 #include"MaxAreaOfIsland.h"
 #include"FindDuplicates.h"
+#include"CandyCrush.h"
+#include"ValidParentheses.h"
 
 using namespace std;
 
@@ -23,6 +25,8 @@ void testSubsets();
 void testFlipAndInvertImage();
 void testMaxAreaOfIsland();
 void testDuplicates();
+void testValidParentheses();
+
 
 
 int main() {
@@ -36,7 +40,8 @@ int main() {
 	//testSubsets();
 	//testFlipAndInvertImage();
 	//testMaxAreaOfIsland();
-	testDuplicates();
+	//testDuplicates();
+	testValidParentheses();
 	return 0;
 }
 
@@ -228,6 +233,14 @@ void testDuplicates()
 	for (size_t j = 0; j < ret.size(); j++) {
 		cout << ret[j];
 	}
+}
+
+void testValidParentheses()
+{
+	string test = "]]";
+	ValidParenthesesSolution s;
+	bool ret = s.isValid(test);
+	cout << ret << endl;
 }
 
 void testSwapNodesInPair() {
