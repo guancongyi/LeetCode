@@ -1,4 +1,5 @@
 #include<iostream>
+#include<math.h>
 #include"TwoSum.h"
 #include"SwapNodesInPairs.h"
 #include"MergeTwoSortedList.h"
@@ -12,6 +13,8 @@
 #include"FindDuplicates.h"
 #include"CandyCrush.h"
 #include"ValidParentheses.h"
+#include"DecodeString.h"
+
 
 using namespace std;
 
@@ -26,7 +29,7 @@ void testFlipAndInvertImage();
 void testMaxAreaOfIsland();
 void testDuplicates();
 void testValidParentheses();
-
+void testDecodeString();
 
 
 int main() {
@@ -41,7 +44,8 @@ int main() {
 	//testFlipAndInvertImage();
 	//testMaxAreaOfIsland();
 	//testDuplicates();
-	testValidParentheses();
+	//testValidParentheses();
+	testDecodeString();
 	return 0;
 }
 
@@ -240,6 +244,14 @@ void testValidParentheses()
 	string test = "]]";
 	ValidParenthesesSolution s;
 	bool ret = s.isValid(test);
+	cout << ret << endl;
+}
+
+void testDecodeString()
+{
+	string str = "3[a]2[bc]";
+	DecodeStringSolution s;
+	string ret = s.decodeString(str);
 	cout << ret << endl;
 }
 

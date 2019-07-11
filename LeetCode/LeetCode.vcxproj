@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CandyCrush.h" />
+    <ClInclude Include="DecodeString.h" />
     <ClInclude Include="FindDuplicates.h" />
     <ClInclude Include="FlipAndInvertImage.h" />
     <ClInclude Include="MaxArea.h" />

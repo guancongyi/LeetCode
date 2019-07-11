@@ -59,5 +59,8 @@
     <ClInclude Include="ValidParentheses.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DecodeString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
