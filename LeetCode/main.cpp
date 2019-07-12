@@ -1,5 +1,6 @@
 #include<iostream>
 #include<math.h>
+
 #include"TwoSum.h"
 #include"SwapNodesInPairs.h"
 #include"MergeTwoSortedList.h"
@@ -14,6 +15,7 @@
 #include"CandyCrush.h"
 #include"ValidParentheses.h"
 #include"DecodeString.h"
+#include"BestTimeToBuyAndSellStock.h"
 
 
 using namespace std;
@@ -30,6 +32,7 @@ void testMaxAreaOfIsland();
 void testDuplicates();
 void testValidParentheses();
 void testDecodeString();
+void testBestProfit();
 
 
 int main() {
@@ -45,7 +48,8 @@ int main() {
 	//testMaxAreaOfIsland();
 	//testDuplicates();
 	//testValidParentheses();
-	testDecodeString();
+	//testDecodeString();
+	testBestProfit();
 	return 0;
 }
 
@@ -253,6 +257,14 @@ void testDecodeString()
 	DecodeStringSolution s;
 	string ret = s.decodeString(str);
 	cout << ret << endl;
+}
+
+void testBestProfit()
+{
+	vector<int> test({ 7,1});
+	BestProfitSolution s;
+	int ret = s.maxProfit(test);
+	cout << ret;
 }
 
 void testSwapNodesInPair() {
