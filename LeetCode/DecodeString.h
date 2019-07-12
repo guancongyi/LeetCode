@@ -3,19 +3,23 @@ s = "3[a]2[bc]", return "aaabcbc".
 s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 
-Solution:
+Solution1:
 use c++ string, find ] first, then split string, and create a new 
 string block to replace the orignial encoded string.
 kind of brutal force...
 
+
+Solution2:
+Using recursive, built a state machine inside the recursive function
+pass the i by reference so that the value will be updated. This method took 
+less memory but not faster.
 */
 
 
 class DecodeStringSolution {
 public:
-	string decodeString(string s) {
-		string ret = "";
-
+	/*Iterative way*/
+	string decodeString1(string s) {	
 		while (1) {
 			if (s.find_first_of(']') == string::npos) { break; }
 			else {
@@ -38,19 +42,49 @@ public:
 					back--;
 					if (back == -1) { back = 0; break; }
 				}
-
-				string newLeft = left.substr(0, start-numDigits);
 				//concatenate
 				string temp = "";
 				for (size_t j = 0; j < num; j++){	temp += block;}
 
 				//cout << block << " /" << temp << " /" << right << endl;
-				ret = newLeft + temp + right;
+				s = left.substr(0, start - numDigits) + temp + right;
 			}
-			s = ret;
+			
 		}
 
 		return s;
 		
 	}
+
+	string decodeString(string s) {
+		int i = 0;
+		return helper(i, s);
+	}
+
+	string helper(int &i, string s) {
+		string block = "";
+		int num = 0;
+		for (;  i< s.length(); i++){
+			char cur = s[i];
+			if (cur == '['){
+				string temp = helper(++i, s);
+				for (size_t j = 0; j < num; j++) { block += temp; }
+				num = 0;
+				continue;
+			}
+			else if (cur == ']') {
+				
+				return block;
+			}
+			else if (isdigit(cur)) {
+				if (num == 0) { num = cur - '0'; }
+				else { num = num * 10 + cur - '0'; }
+			}
+			else {
+				block += cur;
+			}
+		}
+		return block;
+	}
+
 };

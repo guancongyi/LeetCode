@@ -249,7 +249,7 @@ void testValidParentheses()
 
 void testDecodeString()
 {
-	string str = "3[a]2[bc]";
+	string str = "10[a]";
 	DecodeStringSolution s;
 	string ret = s.decodeString(str);
 	cout << ret << endl;
