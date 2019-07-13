@@ -1,5 +1,7 @@
 #include<iostream>
 #include<math.h>
+#include <queue>
+
 
 #include"TwoSum.h"
 #include"SwapNodesInPairs.h"
@@ -16,6 +18,7 @@
 #include"ValidParentheses.h"
 #include"DecodeString.h"
 #include"BestTimeToBuyAndSellStock.h"
+#include"MovingAverage.h"
 
 
 using namespace std;
@@ -33,6 +36,7 @@ void testDuplicates();
 void testValidParentheses();
 void testDecodeString();
 void testBestProfit();
+void testMovingAvg();
 
 
 int main() {
@@ -49,7 +53,8 @@ int main() {
 	//testDuplicates();
 	//testValidParentheses();
 	//testDecodeString();
-	testBestProfit();
+	//testBestProfit();
+	testMovingAvg();
 	return 0;
 }
 
@@ -265,6 +270,18 @@ void testBestProfit()
 	BestProfitSolution s;
 	int ret = s.maxProfit(test);
 	cout << ret;
+}
+
+void testMovingAvg()
+{
+	MovingAverage* obj = new MovingAverage(3);
+	for (size_t i = 0; i < 4; i++)
+	{
+		double a = obj->next(i);
+		cout << a << endl;
+	}
+	
+
 }
 
 void testSwapNodesInPair() {

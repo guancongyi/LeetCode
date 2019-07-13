@@ -126,6 +126,7 @@
     <ClInclude Include="MaxArea.h" />
     <ClInclude Include="MaxAreaOfIsland.h" />
     <ClInclude Include="middleNode.h" />
+    <ClInclude Include="MovingAverage.h" />
     <ClInclude Include="NextLargerNodes.h" />
     <ClInclude Include="ReverseList.h" />
     <ClInclude Include="MergeTwoSortedList.h" />
