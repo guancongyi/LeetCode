@@ -19,6 +19,7 @@
 #include"DecodeString.h"
 #include"BestTimeToBuyAndSellStock.h"
 #include"MovingAverage.h"
+#include"FirstUniqChar.h"
 
 
 using namespace std;
@@ -37,6 +38,7 @@ void testValidParentheses();
 void testDecodeString();
 void testBestProfit();
 void testMovingAvg();
+void testFirstUniqChar();
 
 
 int main() {
@@ -54,7 +56,8 @@ int main() {
 	//testValidParentheses();
 	//testDecodeString();
 	//testBestProfit();
-	testMovingAvg();
+	//testMovingAvg();
+	testFirstUniqChar();
 	return 0;
 }
 
@@ -282,6 +285,14 @@ void testMovingAvg()
 	}
 	
 
+}
+
+void testFirstUniqChar()
+{
+	string str = "doloveleetcodedoyouilove";
+	FirstUniqCharSolution s;
+	int ret = s.firstUniqChar(str);
+	cout << ret;
 }
 
 void testSwapNodesInPair() {
