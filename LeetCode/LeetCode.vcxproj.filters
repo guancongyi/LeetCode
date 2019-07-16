@@ -74,5 +74,8 @@
     <ClInclude Include="ValidBST.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="KillProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

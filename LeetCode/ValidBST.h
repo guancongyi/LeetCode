@@ -6,6 +6,10 @@
  *     TreeNode *right;
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
+
+ Solution:
+ not a good way, I used range, which is essentially the inorder traversal
+ It is better to use in order traversal with a stack.
  */
 
 struct TreeNode {

@@ -124,6 +124,7 @@
     <ClInclude Include="FindDuplicates.h" />
     <ClInclude Include="FirstUniqChar.h" />
     <ClInclude Include="FlipAndInvertImage.h" />
+    <ClInclude Include="KillProcess.h" />
     <ClInclude Include="MaxArea.h" />
     <ClInclude Include="MaxAreaOfIsland.h" />
     <ClInclude Include="middleNode.h" />

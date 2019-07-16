@@ -1,6 +1,8 @@
 #include<iostream>
 #include<math.h>
 #include <queue>
+#include<unordered_map>
+#include<stack>
 
 
 #include"TwoSum.h"
@@ -21,6 +23,7 @@
 #include"MovingAverage.h"
 #include"FirstUniqChar.h"
 #include"ValidBST.h"
+#include "KillProcess.h"
 
 
 using namespace std;
@@ -41,7 +44,7 @@ void testBestProfit();
 void testMovingAvg();
 void testFirstUniqChar();
 void testValidBST();
-
+void testKillProcess();
 
 int main() {
 	
@@ -60,7 +63,8 @@ int main() {
 	//testBestProfit();
 	//testMovingAvg();
 	//testFirstUniqChar();
-	testValidBST();
+	//testValidBST();
+	testKillProcess();
 	return 0;
 }
 
@@ -312,6 +316,18 @@ void testValidBST()
 
 	ValidBSTSolution s;
 	cout << s.isValidBST(t) << endl;
+}
+
+void testKillProcess()
+{
+	vector<int> pid({6,1,3,9,5,8,7,4,10});
+	vector<int> ppid({5,8,4,5,10,5,3,8,0});
+	KillProcessSolution k;
+	vector<int> ret = k.killProcess(pid, ppid, 10);
+	for (size_t i = 0; i < ret.size(); i++)
+	{
+		cout << ret[i] << " ";
+	}
 }
 
 void testSwapNodesInPair() {
