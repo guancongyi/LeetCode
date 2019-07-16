@@ -20,6 +20,7 @@
 #include"BestTimeToBuyAndSellStock.h"
 #include"MovingAverage.h"
 #include"FirstUniqChar.h"
+#include"ValidBST.h"
 
 
 using namespace std;
@@ -39,6 +40,7 @@ void testDecodeString();
 void testBestProfit();
 void testMovingAvg();
 void testFirstUniqChar();
+void testValidBST();
 
 
 int main() {
@@ -57,7 +59,8 @@ int main() {
 	//testDecodeString();
 	//testBestProfit();
 	//testMovingAvg();
-	testFirstUniqChar();
+	//testFirstUniqChar();
+	testValidBST();
 	return 0;
 }
 
@@ -293,6 +296,22 @@ void testFirstUniqChar()
 	FirstUniqCharSolution s;
 	int ret = s.firstUniqChar(str);
 	cout << ret;
+}
+
+void testValidBST()
+{
+	TreeNode* t = new TreeNode(2);
+	t->left = new TreeNode(1);
+	t->right = new TreeNode(3);
+	/*t->left->left = new TreeNode(0);
+	t->left->right = new TreeNode(2);
+	t->right->left = new TreeNode(4);
+	t->right->right = new TreeNode(6);*/
+
+	//t->left->right->right = new TreeNode(3);
+
+	ValidBSTSolution s;
+	cout << s.isValidBST(t) << endl;
 }
 
 void testSwapNodesInPair() {

@@ -134,6 +134,7 @@
     <ClInclude Include="Subsets.h" />
     <ClInclude Include="SwapNodesInPairs.h" />
     <ClInclude Include="TwoSum.h" />
+    <ClInclude Include="ValidBST.h" />
     <ClInclude Include="ValidParentheses.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
