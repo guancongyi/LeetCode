@@ -77,5 +77,8 @@
     <ClInclude Include="KillProcess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MinStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

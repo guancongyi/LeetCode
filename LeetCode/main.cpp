@@ -24,6 +24,7 @@
 #include"FirstUniqChar.h"
 #include"ValidBST.h"
 #include "KillProcess.h"
+#include"MinStack.h"
 
 
 using namespace std;
@@ -45,6 +46,7 @@ void testMovingAvg();
 void testFirstUniqChar();
 void testValidBST();
 void testKillProcess();
+void testMinStack();
 
 int main() {
 	
@@ -64,7 +66,8 @@ int main() {
 	//testMovingAvg();
 	//testFirstUniqChar();
 	//testValidBST();
-	testKillProcess();
+	//testKillProcess();
+	testMinStack();
 	return 0;
 }
 
@@ -328,6 +331,25 @@ void testKillProcess()
 	{
 		cout << ret[i] << " ";
 	}
+}
+
+void testMinStack()
+{
+	MinStack* obj = new MinStack();
+	obj->push(-10);
+	obj->push(14);
+	obj->push(-20);
+	obj->push(10);
+	obj->push(-7);
+
+	int param_3 = obj->top();
+	obj->pop();
+	obj->pop();
+	int param_4 = obj->getMin();
+	obj->pop();
+	obj->push(20);
+	int param_5 = obj->getMin();
+	cout << param_3 << " " << param_4 << " " << param_5;
 }
 
 void testSwapNodesInPair() {
