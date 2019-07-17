@@ -25,6 +25,7 @@
 #include"ValidBST.h"
 #include "KillProcess.h"
 #include"MinStack.h"
+#include"CopyListWithRandomPtr.h"
 
 
 using namespace std;
@@ -47,6 +48,7 @@ void testFirstUniqChar();
 void testValidBST();
 void testKillProcess();
 void testMinStack();
+void testCopyListWithRandomPtr();
 
 int main() {
 	
@@ -67,7 +69,8 @@ int main() {
 	//testFirstUniqChar();
 	//testValidBST();
 	//testKillProcess();
-	testMinStack();
+	//testMinStack();
+	testCopyListWithRandomPtr();
 	return 0;
 }
 
@@ -80,7 +83,7 @@ void testTwoSum() {
 	test.push_back(3);
 	test.push_back(4);
 
-	rslt = s.twoSum(test, 6);
+	rslt = s.twoSum1(test, 6);
 
 	cout << "Solutions are: ";
 	for (int i = 0; i < rslt.size(); i++) {
@@ -350,6 +353,36 @@ void testMinStack()
 	obj->push(20);
 	int param_5 = obj->getMin();
 	cout << param_3 << " " << param_4 << " " << param_5;
+}
+
+void testCopyListWithRandomPtr()
+{
+	Node* one = new Node(1, NULL, NULL);
+	Node* two = new Node(2, NULL, NULL);
+	Node* three = new Node(3, NULL, NULL);
+	Node* four = new Node(4, NULL, NULL);
+	one->next = two;
+	one->random = three;
+	two->next = three;
+	two->random = three;
+	three->next = four;
+	
+
+	CopyListWithRandomPtrSolution s;
+	Node* ret = s.copyRandomList(one);
+	Node* temp = ret;
+	while (temp != NULL) { 
+		cout << temp->val << " ";
+		temp = temp->next;
+
+	}
+	cout << endl;
+	temp = ret;
+	while (temp != NULL) {
+		if (temp->random != NULL) { cout << temp->random->val << " "; }
+		else{ cout << " " << " "; }
+		temp = temp->next;
+	}
 }
 
 void testSwapNodesInPair() {
