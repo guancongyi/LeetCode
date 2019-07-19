@@ -393,12 +393,13 @@ void testEvaluateDivision()
 	vector<vector<string>> eqs;
 	vector<double> vals;
 	eqs.push_back({ "a","b" });
-	eqs.push_back({ "b","c" });
-	vals.push_back(2.0);
-	vals.push_back(3.0);
-	qs.push_back({ "a", "c" });
-	qs.push_back({ "b", "a" });
-	qs.push_back({"x", "x" });
+	eqs.push_back({ "e","f" });
+	eqs.push_back({ "b","e" });
+	vals.push_back(3.4);
+	vals.push_back(1.4);
+	vals.push_back(2.3);
+	qs.push_back({ "a", "f" });
+
 
 	EvaluateDivisionSolution s;
 	vector<double> ret = s.calcEquation(eqs, vals, qs);

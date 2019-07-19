@@ -105,13 +105,75 @@ public:
 
 	vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
 		map<string, string> sets;
-		vector<string, vector<pair<string, double>>> tb;
+		map<string, double> coeffs;
+		//unordered_map<string, vector<string>> tb;
 		for (size_t i = 0; i < equations.size(); i++){
 			string up = equations[i][0];
 			string down = equations[i][1];
+			double val = values[i];
+			auto numer = sets.find(up);
+			auto denom = sets.find(down);
+			// case 1: both do not exist in any set.
+			if (numer == sets.end() && denom == sets.end()) {
+				sets[up] = up, sets[down] = up;
+				coeffs[up] = 1.0, coeffs[down] = val;
+				//vector<string> temp({ up, down });
+				//tb[up] = temp;
+			}
+			// case 2: both exist
+			if ((numer != sets.end() && denom != sets.end()) && (numer->second!=denom->second)) {
+				string numerP = numer->second;
+				string denomP = denom->second;
+				if (numerP == denomP) { continue; }
+				// merge the parents in the table
 
+				// find the coeff
+				double coeff = val * coeffs[up] / coeffs[down];
+				// update the coeffs and change parent in sets
+				for (auto x : sets) {
+					if (x.second == denomP) {
+						sets[x.first] = numerP;
+						coeffs[x.first] = coeffs[x.first] * coeff;
+					}
+				}
+				// merge ???
+				//tb[up].insert(tb[up].end(), tb[down].begin(), tb[down].end());
+			}
+			// case 3: one exists
+			if ((numer != sets.end() || denom != sets.end()) && (!(numer != sets.end() && denom != sets.end()))) {
+				if (numer == sets.end()) {
+					//numer add to denom
+					// add coeffs first
+					coeffs[up] = coeffs[down]/val;
+					// add to sets
+					sets[up] = sets[down];
+					// update table ???
+					//tb[down].push_back(up);
+				}
+				else {
+					coeffs[down] = coeffs[up] * val;
+					sets[down] = sets[up];
+					//tb[up].push_back(down);
+				}
+			}
 			
 		}
+
+		// Query
+		vector<double> ret;
+		for (size_t k = 0; k < queries.size(); k++){
+			auto it1 = sets.find(queries[k][0]);
+			auto it2 = sets.find(queries[k][1]);
+			if ((it1 == sets.end() || it2 == sets.end()) && (queries[k][0] != queries[k][1])) { ret.push_back(-1.0); continue; }
+			if ((it1 == sets.end() && it2 == sets.end())) { ret.push_back(-1.0); continue; }
+			if ((it1->second == it2->second) ) {
+				ret.push_back(coeffs[it2->first] / coeffs[it1->first]);
+			}
+			else {
+				ret.push_back(-1.0);
+			}
+		}
+		return ret;
 
 	}
 	
