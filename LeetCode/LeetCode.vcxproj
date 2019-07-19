@@ -122,6 +122,7 @@
     <ClInclude Include="CandyCrush.h" />
     <ClInclude Include="CopyListWithRandomPtr.h" />
     <ClInclude Include="DecodeString.h" />
+    <ClInclude Include="EvaluateDivision.h" />
     <ClInclude Include="FindDuplicates.h" />
     <ClInclude Include="FirstUniqChar.h" />
     <ClInclude Include="FlipAndInvertImage.h" />

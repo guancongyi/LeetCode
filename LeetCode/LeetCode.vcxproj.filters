@@ -83,5 +83,8 @@
     <ClInclude Include="CopyListWithRandomPtr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EvaluateDivision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

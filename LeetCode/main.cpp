@@ -4,7 +4,6 @@
 #include<unordered_map>
 #include<stack>
 
-
 #include"TwoSum.h"
 #include"SwapNodesInPairs.h"
 #include"MergeTwoSortedList.h"
@@ -26,6 +25,7 @@
 #include "KillProcess.h"
 #include"MinStack.h"
 #include"CopyListWithRandomPtr.h"
+#include"EvaluateDivision.h"
 
 
 using namespace std;
@@ -49,6 +49,7 @@ void testValidBST();
 void testKillProcess();
 void testMinStack();
 void testCopyListWithRandomPtr();
+void testEvaluateDivision();
 
 int main() {
 	
@@ -70,7 +71,8 @@ int main() {
 	//testValidBST();
 	//testKillProcess();
 	//testMinStack();
-	testCopyListWithRandomPtr();
+	//testCopyListWithRandomPtr();
+	testEvaluateDivision();
 	return 0;
 }
 
@@ -383,6 +385,28 @@ void testCopyListWithRandomPtr()
 		else{ cout << " " << " "; }
 		temp = temp->next;
 	}
+}
+
+void testEvaluateDivision()
+{
+	vector<vector<string>> qs;
+	vector<vector<string>> eqs;
+	vector<double> vals;
+	eqs.push_back({ "a","b" });
+	eqs.push_back({ "b","c" });
+	vals.push_back(2.0);
+	vals.push_back(3.0);
+	qs.push_back({ "a", "c" });
+	qs.push_back({ "b", "a" });
+	qs.push_back({"x", "x" });
+
+	EvaluateDivisionSolution s;
+	vector<double> ret = s.calcEquation(eqs, vals, qs);
+	for (size_t i = 0; i < ret.size(); i++)
+	{
+		cout << ret[i] << " ";
+	}
+	//qs.push_back({ 0,0,0,1,1 });
 }
 
 void testSwapNodesInPair() {
