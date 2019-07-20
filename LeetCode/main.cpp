@@ -26,6 +26,7 @@
 #include"MinStack.h"
 #include"CopyListWithRandomPtr.h"
 #include"EvaluateDivision.h"
+#include"LRUCache.h"
 
 
 using namespace std;
@@ -50,6 +51,7 @@ void testKillProcess();
 void testMinStack();
 void testCopyListWithRandomPtr();
 void testEvaluateDivision();
+void testLRUCache();
 
 int main() {
 	
@@ -72,7 +74,8 @@ int main() {
 	//testKillProcess();
 	//testMinStack();
 	//testCopyListWithRandomPtr();
-	testEvaluateDivision();
+	//testEvaluateDivision();
+	testLRUCache();
 	return 0;
 }
 
@@ -408,6 +411,26 @@ void testEvaluateDivision()
 		cout << ret[i] << " ";
 	}
 	//qs.push_back({ 0,0,0,1,1 });
+}
+
+void testLRUCache()
+{
+	LRUCache* obj = new LRUCache(3);
+	obj->put(1, 1);
+	obj->put(2, 2);
+	obj->put(3, 3);
+	obj->put(4, 4);
+	obj->put(5, 5);
+	obj->put(6, 6);
+	cout << obj->get(3) << endl;
+	cout << obj->get(2) << endl;
+	cout << obj->get(1) << endl;
+	obj->put(4, 4);
+	cout << obj->get(5) << endl;
+	obj->put(5, 6);
+
+	
+
 }
 
 void testSwapNodesInPair() {

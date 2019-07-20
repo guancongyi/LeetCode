@@ -11,6 +11,22 @@ There are 2 situations:
 2 y n insert 2 nodes and loop through one of them to find the relationship of exisiting itmes
 and new coming items
 
+above is totally wrong
+
+
+My new solution (0 ms, 9.1mb)
+2 containers
+sets: element----which set it belongs to
+coeffs: element----coefficient between itself and its set
+
+Step 1:
+build the sets and coefficient map, there are 3 cases:
+1. both do not exist in any set
+2. both exist in different/same set
+3. One exist in one of the sets, the other not
+
+main idea: union and find,
+form sets so that we can keep tracking the coeffs
 
 Then loop through queries 
 
@@ -106,7 +122,6 @@ public:
 	vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
 		map<string, string> sets;
 		map<string, double> coeffs;
-		//unordered_map<string, vector<string>> tb;
 		for (size_t i = 0; i < equations.size(); i++){
 			string up = equations[i][0];
 			string down = equations[i][1];
@@ -117,16 +132,12 @@ public:
 			if (numer == sets.end() && denom == sets.end()) {
 				sets[up] = up, sets[down] = up;
 				coeffs[up] = 1.0, coeffs[down] = val;
-				//vector<string> temp({ up, down });
-				//tb[up] = temp;
 			}
 			// case 2: both exist
 			if ((numer != sets.end() && denom != sets.end()) && (numer->second!=denom->second)) {
 				string numerP = numer->second;
 				string denomP = denom->second;
 				if (numerP == denomP) { continue; }
-				// merge the parents in the table
-
 				// find the coeff
 				double coeff = val * coeffs[up] / coeffs[down];
 				// update the coeffs and change parent in sets
@@ -136,8 +147,6 @@ public:
 						coeffs[x.first] = coeffs[x.first] * coeff;
 					}
 				}
-				// merge ???
-				//tb[up].insert(tb[up].end(), tb[down].begin(), tb[down].end());
 			}
 			// case 3: one exists
 			if ((numer != sets.end() || denom != sets.end()) && (!(numer != sets.end() && denom != sets.end()))) {
@@ -147,13 +156,10 @@ public:
 					coeffs[up] = coeffs[down]/val;
 					// add to sets
 					sets[up] = sets[down];
-					// update table ???
-					//tb[down].push_back(up);
 				}
 				else {
 					coeffs[down] = coeffs[up] * val;
 					sets[down] = sets[up];
-					//tb[up].push_back(down);
 				}
 			}
 			

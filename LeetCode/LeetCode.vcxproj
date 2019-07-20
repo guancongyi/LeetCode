@@ -127,6 +127,7 @@
     <ClInclude Include="FirstUniqChar.h" />
     <ClInclude Include="FlipAndInvertImage.h" />
     <ClInclude Include="KillProcess.h" />
+    <ClInclude Include="LRUCache.h" />
     <ClInclude Include="MaxArea.h" />
     <ClInclude Include="MaxAreaOfIsland.h" />
     <ClInclude Include="middleNode.h" />
