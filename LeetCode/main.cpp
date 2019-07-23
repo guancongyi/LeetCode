@@ -53,6 +53,7 @@ void testMinStack();
 void testCopyListWithRandomPtr();
 void testEvaluateDivision();
 void testLRUCache();
+void testRectOverlap();
 
 int main() {
 	
@@ -76,7 +77,8 @@ int main() {
 	//testMinStack();
 	//testCopyListWithRandomPtr();
 	//testEvaluateDivision();
-	testLRUCache();
+	//testLRUCache();
+	testRectOverlap();
 	return 0;
 }
 
@@ -433,6 +435,14 @@ void testLRUCache()
 
 	
 
+}
+
+void testRectOverlap()
+{
+	vector<int> v1({-7,-3,10,5});
+	vector<int> v2({ -6,-5,5,10 });
+	RectOverlapSolution s;
+	cout << s.isRectangleOverlap(v1, v2) << endl;
 }
 
 void testSwapNodesInPair() {
