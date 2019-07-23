@@ -134,6 +134,7 @@
     <ClInclude Include="MinStack.h" />
     <ClInclude Include="MovingAverage.h" />
     <ClInclude Include="NextLargerNodes.h" />
+    <ClInclude Include="RectOverlap.h" />
     <ClInclude Include="ReverseList.h" />
     <ClInclude Include="MergeTwoSortedList.h" />
     <ClInclude Include="Subsets.h" />

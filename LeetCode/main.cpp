@@ -27,6 +27,7 @@
 #include"CopyListWithRandomPtr.h"
 #include"EvaluateDivision.h"
 #include"LRUCache.h"
+#include"RectOverlap.h"
 
 
 using namespace std;
@@ -415,19 +416,20 @@ void testEvaluateDivision()
 
 void testLRUCache()
 {
-	LRUCache* obj = new LRUCache(3);
-	obj->put(1, 1);
-	obj->put(2, 2);
-	obj->put(3, 3);
-	obj->put(4, 4);
-	obj->put(5, 5);
+	LRUCache* obj = new LRUCache(1);
+	obj->put(2, 1);
+	cout << obj->get(2) << endl;
+	obj->put(3, 2);
+	cout << obj->get(2) << endl;
+	cout << obj->get(3) << endl;
+	/*obj->put(5, 5);
 	obj->put(6, 6);
 	cout << obj->get(3) << endl;
-	cout << obj->get(2) << endl;
-	cout << obj->get(1) << endl;
 	obj->put(4, 4);
 	cout << obj->get(5) << endl;
-	obj->put(5, 6);
+	obj->put(5, 6);*/
+	//cout << obj->get(1) << endl;
+	
 
 	
 
