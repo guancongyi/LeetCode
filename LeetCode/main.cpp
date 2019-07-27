@@ -77,8 +77,8 @@ int main() {
 	//testMinStack();
 	//testCopyListWithRandomPtr();
 	//testEvaluateDivision();
-	//testLRUCache();
-	testRectOverlap();
+	testLRUCache();
+	//testRectOverlap();
 	return 0;
 }
 
@@ -418,15 +418,15 @@ void testEvaluateDivision()
 
 void testLRUCache()
 {
-	LRUCache* obj = new LRUCache(1);
-	obj->put(2, 1);
+	LRUCache* obj = new LRUCache(2);
+
+	obj->put(2, 6);
+	obj->put(1, 5);
+	obj->put(1, 2);
+	cout << obj->get(1) << endl;
 	cout << obj->get(2) << endl;
-	obj->put(3, 2);
-	cout << obj->get(2) << endl;
-	cout << obj->get(3) << endl;
-	/*obj->put(5, 5);
-	obj->put(6, 6);
-	cout << obj->get(3) << endl;
+	
+	/*cout << obj->get(3) << endl;
 	obj->put(4, 4);
 	cout << obj->get(5) << endl;
 	obj->put(5, 6);*/

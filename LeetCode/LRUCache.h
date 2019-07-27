@@ -1,18 +1,70 @@
 /*
+S1: 
 containers:
 table with <int, Node*> that can store each element in the list
 table with <Node*, Node*> that can store each element's parent
-table with <int, int> that can store each key-value .
+table with <int, int> that can store each key-value.
+
+I can't say my way is not correct, but I was doing something not
+very convenient. Since C++ has STL, I should probably use them, not
+rewriting them.
 
 There is another way of doing it.
+S2:
+Three containers:
+kv --> key value pair
+um --> key and iterator(it's like a pointer in the solution above)
+LRU --> a linked list
 */
-
-
-
 
 class LRUCache {
 public:
-	LRUCache(int capacity) {
+	LRUCache(int capacity): size(capacity) {}
+		
+	int get(int key) {
+		auto it = this->kv.find(key);
+		if (it != this->kv.end()) {
+			int val = it->second;
+			update(key, val);
+			return val;
+		}
+		return -1;
+	}
+
+	void put(int key, int value) {
+		if (this->LRU.size() == size && get(key)== -1)
+			evict(this->LRU.back());
+		update(key, value);
+	}
+
+	void evict(int key) {
+		this->kv.erase(key);
+		this->um.erase(key);
+		this->LRU.pop_back();
+	}
+
+	void update(int key, int value) {
+		auto it = kv.find(key);
+		if (it != kv.end())
+			this->LRU.erase(this->um[key]);
+		this->LRU.push_front(key);
+		auto it2 = this->LRU.begin();
+		this->um[key] = it2;
+		this->kv[key] = value;
+	}
+
+private:
+	size_t size;
+	list<int> LRU;		//keys
+	unordered_map<int, list<int>::iterator> um;  // keys -> iterator in the list above
+	map<int, int> kv;	//keys -> values
+};
+
+
+
+class LRUCache1 {
+public:
+	LRUCache1(int capacity) {
 		this->limit = capacity;
 		this->size = 0;
 		this->head = NULL;
