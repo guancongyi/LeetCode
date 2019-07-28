@@ -1,4 +1,7 @@
-class BloomMock1Solution {
+/*BloomMock1*/
+
+
+class PascalSolution {
 public:
 	vector<vector<int>> generate(int numRows) {
 		vector<vector<int>> ret;
@@ -30,31 +33,36 @@ public:
 
 
 /*
- * Definition for a binary tree node.
- * 
+ * Start with a BT traversal, store every node in 
+ * an array.
+ * For each level, store the left most node and right most node.
  */
+#ifndef TREENODE
+#define TREENODE
+
 struct TreeNode {
 	int val;
 	TreeNode* left;
 	TreeNode* right;
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-	
 };
+
+#endif TREENODE
+
 
 class WidthOfBTSolution {
 public:
-	unordered_map<int, int> um;
+
 	int widthOfBinaryTree(TreeNode* root) {
-		int level = 1;
-		stack<TreeNode*> s;
-		s.push(root);
-		if (root == NULL) { return 0; }
-		else {
-			while (!s.empty()) {
-				TreeNode* temp = s.top();
-				s.pop();
-			}
-		}
+		vector<pair<int, int>> vec({});
+		return helper(root,0, 1, vec);
+	}
+
+	int helper(TreeNode* cur, unsigned int level, unsigned int id, vector<pair<int, int>>& vec) {
+		if (cur == NULL) return 0;
+		if (vec.size() == level) vec.push_back({ id, id });
+		else { vec[level].second = id; }
+		return std::max({ vec[level].second - vec[level].first + 1, helper(cur->left, level + 1, id * 2, vec), helper(cur->right, level + 1, 1 + id * 2, vec) });
 
 	}
 };

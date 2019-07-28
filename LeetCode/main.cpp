@@ -55,6 +55,10 @@ void testCopyListWithRandomPtr();
 void testEvaluateDivision();
 void testLRUCache();
 void testRectOverlap();
+void testWidthOfBTSolution();
+
+
+
 
 int main() {
 	
@@ -78,8 +82,9 @@ int main() {
 	//testMinStack();
 	//testCopyListWithRandomPtr();
 	//testEvaluateDivision();
-	testLRUCache();
+	//testLRUCache();
 	//testRectOverlap();
+	testWidthOfBTSolution();
 	return 0;
 }
 
@@ -432,10 +437,6 @@ void testLRUCache()
 	cout << obj->get(5) << endl;
 	obj->put(5, 6);*/
 	//cout << obj->get(1) << endl;
-	
-
-	
-
 }
 
 void testRectOverlap()
@@ -444,6 +445,20 @@ void testRectOverlap()
 	vector<int> v2({ -6,-5,5,10 });
 	RectOverlapSolution s;
 	cout << s.isRectangleOverlap(v1, v2) << endl;
+}
+
+void testWidthOfBTSolution()
+{
+	TreeNode* t = new TreeNode(2);
+	t->left = new TreeNode(1);
+	t->right = new TreeNode(3);
+	t->left->left = new TreeNode(0);
+	t->left->right = new TreeNode(2);
+	t->right->left = new TreeNode(4);
+	t->right->right = new TreeNode(6);
+
+	WidthOfBTSolution s;
+	cout << s.widthOfBinaryTree(t) << endl;
 }
 
 void testSwapNodesInPair() {
