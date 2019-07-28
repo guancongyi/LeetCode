@@ -92,5 +92,8 @@
     <ClInclude Include="RectOverlap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BloombergMock1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
