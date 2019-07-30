@@ -29,6 +29,7 @@
 #include"LRUCache.h"
 #include"RectOverlap.h"
 #include"BloombergMock1.h"
+#include"ConstructBTFromPreorderAndInorder.h"
 
 
 using namespace std;
@@ -56,7 +57,7 @@ void testEvaluateDivision();
 void testLRUCache();
 void testRectOverlap();
 void testWidthOfBTSolution();
-
+void testConstructBT();
 
 
 
@@ -84,7 +85,8 @@ int main() {
 	//testEvaluateDivision();
 	//testLRUCache();
 	//testRectOverlap();
-	testWidthOfBTSolution();
+	//testWidthOfBTSolution();
+	testConstructBT();
 	return 0;
 }
 
@@ -459,6 +461,11 @@ void testWidthOfBTSolution()
 
 	WidthOfBTSolution s;
 	cout << s.widthOfBinaryTree(t) << endl;
+}
+
+void testConstructBT()
+{
+
 }
 
 void testSwapNodesInPair() {

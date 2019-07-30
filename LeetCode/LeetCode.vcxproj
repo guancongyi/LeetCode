@@ -121,6 +121,7 @@
     <ClInclude Include="BestTimeToBuyAndSellStock.h" />
     <ClInclude Include="BloombergMock1.h" />
     <ClInclude Include="CandyCrush.h" />
+    <ClInclude Include="ConstructBTFromPreorderAndInorder.h" />
     <ClInclude Include="CopyListWithRandomPtr.h" />
     <ClInclude Include="DecodeString.h" />
     <ClInclude Include="EvaluateDivision.h" />

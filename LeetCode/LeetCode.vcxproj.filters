@@ -95,5 +95,8 @@
     <ClInclude Include="BloombergMock1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ConstructBTFromPreorderAndInorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
