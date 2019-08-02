@@ -465,7 +465,15 @@ void testWidthOfBTSolution()
 
 void testConstructBT()
 {
-
+	vector<int> pre({ 4,1,2,3 });
+	vector<int> in({ 1,2,3,4 });
+	ConstructBTSolution s, s2;
+	TreeNode* ret = s.buildTree(pre, in);
+	TreeNode* ret2 = s2.buildTree(pre, in);
+	s.preorder(ret);
+	cout << endl;
+	s.inorder(ret2);
+	
 }
 
 void testSwapNodesInPair() {
