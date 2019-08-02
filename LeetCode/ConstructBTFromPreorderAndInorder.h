@@ -77,7 +77,18 @@ public:
 	}
 
 	TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+		return helper( preorder, 0, preorder.size(), inorder, 0, inorder.size());
+	}
 
+	TreeNode* helper( vector<int> pre, int i, int j, vector<int> in, int ii, int jj) {
+		if (i >= j || ii >= jj) { return NULL; }
+		int mid = pre[i];
+		auto f = find(in.begin()+ii,in.begin()+jj,mid);
+		auto dist = f-in.begin()-ii;
+		TreeNode* root = new TreeNode(pre[i]);
+		root->left = helper( pre, i + 1, i + dist + 1, in, ii, ii+dist  );
+		root->right = helper( pre, i+dist+1,j ,in, ii+dist+1, jj );
+		return root;
 	}
 
 };

@@ -3,6 +3,8 @@
 #include <queue>
 #include<unordered_map>
 #include<stack>
+#include<algorithm>
+#include<vector>
 
 #include"TwoSum.h"
 #include"SwapNodesInPairs.h"
@@ -465,14 +467,15 @@ void testWidthOfBTSolution()
 
 void testConstructBT()
 {
-	vector<int> pre({ 4,1,2,3 });
-	vector<int> in({ 1,2,3,4 });
+	vector<int> pre({ 1,2,4,5,6,3,7 });
+	vector<int> in({ 4,2,5,1,6,3,7 });
 	ConstructBTSolution s, s2;
 	TreeNode* ret = s.buildTree(pre, in);
 	TreeNode* ret2 = s2.buildTree(pre, in);
 	s.preorder(ret);
 	cout << endl;
 	s.inorder(ret2);
+	
 	
 }
 
