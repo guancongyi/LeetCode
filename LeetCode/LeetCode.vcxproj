@@ -123,6 +123,7 @@
     <ClInclude Include="CandyCrush.h" />
     <ClInclude Include="ConstructBTFromPreorderAndInorder.h" />
     <ClInclude Include="CopyListWithRandomPtr.h" />
+    <ClInclude Include="DataStruct.h" />
     <ClInclude Include="DecodeString.h" />
     <ClInclude Include="EvaluateDivision.h" />
     <ClInclude Include="FindDuplicates.h" />
@@ -136,6 +137,7 @@
     <ClInclude Include="MinStack.h" />
     <ClInclude Include="MovingAverage.h" />
     <ClInclude Include="NextLargerNodes.h" />
+    <ClInclude Include="PopulatingRightPtrsI.h" />
     <ClInclude Include="RectOverlap.h" />
     <ClInclude Include="ReverseList.h" />
     <ClInclude Include="MergeTwoSortedList.h" />

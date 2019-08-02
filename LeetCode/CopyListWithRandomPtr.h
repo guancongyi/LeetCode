@@ -6,22 +6,6 @@ Loop through the list 2 times, the first time just build the next pointer.
 Next time build the random pointer.
 */
 
-// Definition for a Node.
-class Node {
-public:
-	int val;
-	Node* next;
-	Node* random;
-
-	Node() {}
-
-	Node(int _val, Node* _next, Node* _random) {
-		val = _val;
-		next = _next;
-		random = _random;
-	}
-};
-
 
 class CopyListWithRandomPtrSolution {
 public:

@@ -6,6 +6,7 @@
 #include<algorithm>
 #include<vector>
 
+#include"DataStruct.h"
 #include"TwoSum.h"
 #include"SwapNodesInPairs.h"
 #include"MergeTwoSortedList.h"
@@ -32,6 +33,8 @@
 #include"RectOverlap.h"
 #include"BloombergMock1.h"
 #include"ConstructBTFromPreorderAndInorder.h"
+#include"PopulatingRightPtrsI.h"
+
 
 
 using namespace std;
@@ -60,6 +63,8 @@ void testLRUCache();
 void testRectOverlap();
 void testWidthOfBTSolution();
 void testConstructBT();
+void testPopulatingRightPtrs();
+
 
 
 
@@ -88,7 +93,8 @@ int main() {
 	//testLRUCache();
 	//testRectOverlap();
 	//testWidthOfBTSolution();
-	testConstructBT();
+	//testConstructBT();
+	testPopulatingRightPtrs();
 	return 0;
 }
 
@@ -477,6 +483,49 @@ void testConstructBT()
 	s.inorder(ret2);
 	
 	
+}
+
+void testPopulatingRightPtrs()
+{
+	
+	Node* t = new Node(1, NULL, NULL, NULL);
+	t->left = new Node(2, NULL, NULL, NULL);
+	t->right = new Node(3, NULL, NULL, NULL);
+	t->left->left = new Node(4, NULL, NULL, NULL);
+	t->left->right = new Node(5, NULL, NULL, NULL);
+	t->right->left = new Node(6, NULL, NULL, NULL);
+	t->right->right = new Node(7, NULL, NULL, NULL);
+	t->left->left->left = new Node(8, NULL, NULL, NULL);
+	t->left->left->right = new Node(9, NULL, NULL, NULL);
+	t->left->right->left = new Node(10, NULL, NULL, NULL);
+	t->left->right->right = new Node(11, NULL, NULL, NULL);
+
+	t->right->left->left = new Node(12, NULL, NULL, NULL);
+	t->right->left->right = new Node(13, NULL, NULL, NULL);
+	t->right->right->left = new Node(14, NULL, NULL, NULL);
+	t->right->right->right = new Node(15, NULL, NULL, NULL);
+
+	t->left->left->left->left = new Node(16, NULL, NULL, NULL);
+	t->left->left->right->left = new Node(18, NULL, NULL, NULL);
+	t->left->right->left->left = new Node(20, NULL, NULL, NULL);
+	t->left->right->right->left = new Node(22, NULL, NULL, NULL);
+	t->left->left->left->right = new Node(17, NULL, NULL, NULL);
+	t->left->left->right->right = new Node(19, NULL, NULL, NULL);
+	t->left->right->left->right = new Node(21, NULL, NULL, NULL);
+	t->left->right->right->right = new Node(23, NULL, NULL, NULL);
+
+	t->right->left->left->left = new Node(24, NULL, NULL, NULL);
+	t->right->left->right->left = new Node(26, NULL, NULL, NULL);
+	t->right->right->left->left = new Node(28, NULL, NULL, NULL);
+	t->right->right->right->left = new Node(30, NULL, NULL, NULL);
+	t->right->left->left->right = new Node(25, NULL, NULL, NULL);
+	t->right->left->right->right = new Node(27, NULL, NULL, NULL);
+	t->right->right->left->right = new Node(29, NULL, NULL, NULL);
+	t->right->right->right->right = new Node(31, NULL, NULL, NULL);
+
+	PopulatingRightPtrsSolution s;
+	Node* ret = s.connect(t);
+	cout << "test";
 }
 
 void testSwapNodesInPair() {
