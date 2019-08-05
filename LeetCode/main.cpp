@@ -34,8 +34,7 @@
 #include"BloombergMock1.h"
 #include"ConstructBTFromPreorderAndInorder.h"
 #include"PopulatingRightPtrsI.h"
-
-
+#include"PopulatingRightPtrsII.h"
 
 using namespace std;
 
@@ -63,10 +62,8 @@ void testLRUCache();
 void testRectOverlap();
 void testWidthOfBTSolution();
 void testConstructBT();
-void testPopulatingRightPtrs();
-
-
-
+void testPopulatingRightPtrsI();
+void testPopulatingRightPtrsII();
 
 int main() {
 	
@@ -94,7 +91,7 @@ int main() {
 	//testRectOverlap();
 	//testWidthOfBTSolution();
 	//testConstructBT();
-	testPopulatingRightPtrs();
+	testPopulatingRightPtrsI();
 	return 0;
 }
 
@@ -485,7 +482,7 @@ void testConstructBT()
 	
 }
 
-void testPopulatingRightPtrs()
+void testPopulatingRightPtrsI()
 {
 	
 	Node* t = new Node(1, NULL, NULL, NULL);
@@ -526,6 +523,10 @@ void testPopulatingRightPtrs()
 	PopulatingRightPtrsSolution s;
 	Node* ret = s.connect(t);
 	cout << "test";
+}
+
+void testPopulatingRightPtrsII()
+{
 }
 
 void testSwapNodesInPair() {

@@ -6,7 +6,7 @@ connect every left and right from the same subtree
 Then:
 connect every right node to its adjacent left node
 
-
+Preorder traversal is not necessary
 
 
 */
@@ -16,7 +16,7 @@ public:
 	Node* connect(Node* root) {
 		if (root == NULL) { return NULL; }
 		// connect children
-		preorder(root);
+		//preorder(root);
 		connectSubTrees(root->left, root->right);
 		return root;
 

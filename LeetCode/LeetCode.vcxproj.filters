@@ -104,5 +104,8 @@
     <ClInclude Include="DataStruct.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PopulatingRightPtrsII.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

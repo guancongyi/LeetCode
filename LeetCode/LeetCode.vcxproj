@@ -138,6 +138,7 @@
     <ClInclude Include="MovingAverage.h" />
     <ClInclude Include="NextLargerNodes.h" />
     <ClInclude Include="PopulatingRightPtrsI.h" />
+    <ClInclude Include="PopulatingRightPtrsII.h" />
     <ClInclude Include="RectOverlap.h" />
     <ClInclude Include="ReverseList.h" />
     <ClInclude Include="MergeTwoSortedList.h" />
