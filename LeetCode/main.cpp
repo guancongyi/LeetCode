@@ -91,7 +91,7 @@ int main() {
 	//testRectOverlap();
 	//testWidthOfBTSolution();
 	//testConstructBT();
-	testPopulatingRightPtrsI();
+	testPopulatingRightPtrsII();
 	return 0;
 }
 
@@ -527,6 +527,26 @@ void testPopulatingRightPtrsI()
 
 void testPopulatingRightPtrsII()
 {
+	Node* t = new Node(1, NULL, NULL, NULL);
+	t->left = new Node(2, NULL, NULL, NULL);
+	t->right = new Node(3, NULL, NULL, NULL);
+	t->left->left = new Node(4, NULL, NULL, NULL);
+	t->left->right = new Node(5, NULL, NULL, NULL);
+	t->right->left = new Node(6, NULL, NULL, NULL);
+	t->right->right = new Node(7, NULL, NULL, NULL);
+	t->left->left->left = new Node(8, NULL, NULL, NULL);
+	t->left->left->right = new Node(9, NULL, NULL, NULL);
+	//t->left->right->left = new Node(10, NULL, NULL, NULL);
+	t->left->right->right = new Node(11, NULL, NULL, NULL);
+
+	//t->right->left->left = new Node(12, NULL, NULL, NULL);
+	//t->right->left->right = new Node(13, NULL, NULL, NULL);
+	t->right->right->left = new Node(14, NULL, NULL, NULL);
+	t->right->right->right = new Node(15, NULL, NULL, NULL);
+
+	PopulatingRightPtrsIISolution s;
+	Node* ret = s.connect(t);
+	cout << "test";
 }
 
 void testSwapNodesInPair() {
