@@ -142,6 +142,7 @@
     <ClInclude Include="RectOverlap.h" />
     <ClInclude Include="ReverseList.h" />
     <ClInclude Include="MergeTwoSortedList.h" />
+    <ClInclude Include="SortCharByFrequency.h" />
     <ClInclude Include="Subsets.h" />
     <ClInclude Include="SwapNodesInPairs.h" />
     <ClInclude Include="TwoSum.h" />

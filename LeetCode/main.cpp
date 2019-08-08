@@ -5,6 +5,7 @@
 #include<stack>
 #include<algorithm>
 #include<vector>
+#include<list>
 
 #include"DataStruct.h"
 #include"TwoSum.h"
@@ -35,6 +36,7 @@
 #include"ConstructBTFromPreorderAndInorder.h"
 #include"PopulatingRightPtrsI.h"
 #include"PopulatingRightPtrsII.h"
+#include"SortCharByFrequency.h"
 
 using namespace std;
 
@@ -64,6 +66,7 @@ void testWidthOfBTSolution();
 void testConstructBT();
 void testPopulatingRightPtrsI();
 void testPopulatingRightPtrsII();
+void testSortCharByFreq();
 
 int main() {
 	
@@ -91,7 +94,8 @@ int main() {
 	//testRectOverlap();
 	//testWidthOfBTSolution();
 	//testConstructBT();
-	testPopulatingRightPtrsII();
+	//testPopulatingRightPtrsII();
+	testSortCharByFreq();
 	return 0;
 }
 
@@ -547,6 +551,12 @@ void testPopulatingRightPtrsII()
 	PopulatingRightPtrsIISolution s;
 	Node* ret = s.connect(t);
 	cout << "test";
+}
+
+void testSortCharByFreq()
+{
+	SortCharByFreqSolution s;
+	cout << s.frequencySort("cccaaa");
 }
 
 void testSwapNodesInPair() {
