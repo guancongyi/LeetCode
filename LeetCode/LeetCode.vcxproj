@@ -123,6 +123,8 @@
     <ClInclude Include="CandyCrush.h" />
     <ClInclude Include="ConstructBTFromPreorderAndInorder.h" />
     <ClInclude Include="CopyListWithRandomPtr.h" />
+    <ClInclude Include="test.h" />
+    <ClInclude Include="TopKFreqWords.h" />
     <ClInclude Include="utils.h" />
     <ClInclude Include="DecodeString.h" />
     <ClInclude Include="EvaluateDivision.h" />
