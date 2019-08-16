@@ -123,7 +123,7 @@
     <ClInclude Include="CandyCrush.h" />
     <ClInclude Include="ConstructBTFromPreorderAndInorder.h" />
     <ClInclude Include="CopyListWithRandomPtr.h" />
-    <ClInclude Include="DataStruct.h" />
+    <ClInclude Include="utils.h" />
     <ClInclude Include="DecodeString.h" />
     <ClInclude Include="EvaluateDivision.h" />
     <ClInclude Include="FindDuplicates.h" />
@@ -146,6 +146,7 @@
     <ClInclude Include="Subsets.h" />
     <ClInclude Include="SwapNodesInPairs.h" />
     <ClInclude Include="TwoSum.h" />
+    <ClInclude Include="ValidAnagram.h" />
     <ClInclude Include="ValidBST.h" />
     <ClInclude Include="ValidParentheses.h" />
   </ItemGroup>

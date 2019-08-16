@@ -1,3 +1,32 @@
+void testSwapNodesInPair();
+void testTwoSum();
+void testMergeTwoSortedList();
+void testReverseList();
+void testNextLargerNodes();
+void testMaxArea();
+void testSubsets();
+void testFlipAndInvertImage();
+void testMaxAreaOfIsland();
+void testDuplicates();
+void testValidParentheses();
+void testDecodeString();
+void testBestProfit();
+void testMovingAvg();
+void testFirstUniqChar();
+void testValidBST();
+void testKillProcess();
+void testMinStack();
+void testCopyListWithRandomPtr();
+void testEvaluateDivision();
+void testLRUCache();
+void testRectOverlap();
+void testWidthOfBTSolution();
+void testConstructBT();
+void testPopulatingRightPtrsI();
+void testPopulatingRightPtrsII();
+void testSortCharByFreq();
+void testValidAnagram();
+
 #ifndef NODE
 #define NODE
 

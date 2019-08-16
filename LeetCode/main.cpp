@@ -37,36 +37,9 @@
 #include"PopulatingRightPtrsI.h"
 #include"PopulatingRightPtrsII.h"
 #include"SortCharByFrequency.h"
+#include"ValidAnagram.h"
 
 using namespace std;
-
-void testSwapNodesInPair();
-void testTwoSum();
-void testMergeTwoSortedList();
-void testReverseList();
-void testNextLargerNodes();
-void testMaxArea();
-void testSubsets();
-void testFlipAndInvertImage();
-void testMaxAreaOfIsland();
-void testDuplicates();
-void testValidParentheses();
-void testDecodeString();
-void testBestProfit();
-void testMovingAvg();
-void testFirstUniqChar();
-void testValidBST();
-void testKillProcess();
-void testMinStack();
-void testCopyListWithRandomPtr();
-void testEvaluateDivision();
-void testLRUCache();
-void testRectOverlap();
-void testWidthOfBTSolution();
-void testConstructBT();
-void testPopulatingRightPtrsI();
-void testPopulatingRightPtrsII();
-void testSortCharByFreq();
 
 int main() {
 	
@@ -95,7 +68,8 @@ int main() {
 	//testWidthOfBTSolution();
 	//testConstructBT();
 	//testPopulatingRightPtrsII();
-	testSortCharByFreq();
+	//testSortCharByFreq();
+	testValidAnagram();
 	return 0;
 }
 
@@ -557,6 +531,14 @@ void testSortCharByFreq()
 {
 	SortCharByFreqSolution s;
 	cout << s.frequencySort("cccaaa");
+}
+
+void testValidAnagram()
+{
+	ValidAnagramSolution sol;
+	string s = "Anagram";
+	string t = "nagaram";
+	cout << sol.isAnagram(s, t);
 }
 
 void testSwapNodesInPair() {
