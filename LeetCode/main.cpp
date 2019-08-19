@@ -7,7 +7,7 @@
 #include<vector>
 #include<list>
 
-#include"DataStruct.h"
+#include"utils.h"
 #include"test.h"
 
 
@@ -41,7 +41,9 @@ int main() {
 	//testPopulatingRightPtrsII();
 	//testSortCharByFreq();
 	//testValidAnagram();
-	testTopKFreqWords();
+	//testTopKFreqWords();
+	//testMeetingRoomII();
+
 	return 0;
 }
 

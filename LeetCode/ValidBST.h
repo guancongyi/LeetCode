@@ -11,17 +11,7 @@
  not a good way, I used range, which is essentially the inorder traversal
  It is better to use in order traversal with a stack.
  */
-#ifndef TREENODE
-#define TREENODE
 
-struct TreeNode {
-	int val;
-	TreeNode* left;
-	TreeNode* right;
-	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-	
-};
-#endif TREENODE
 
 class ValidBSTSolution {
 public:

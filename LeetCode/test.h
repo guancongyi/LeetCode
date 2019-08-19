@@ -29,6 +29,8 @@
 #include"SortCharByFrequency.h"
 #include"ValidAnagram.h"
 #include"TopKFreqWords.h"
+#include"MeetingRoomI.h"
+#include"MeetingRoomII.h"
 
 using namespace std;
 
@@ -530,4 +532,17 @@ void testTopKFreqWords() {
 	for (size_t i = 0; i < ret.size(); i++) {
 		cout << ret[i] << " ";
 	}
+}
+
+void testMeetingRoomI() {
+	vector<vector<int>> vec({ {5,10},{15,20},{2,30} });
+	MeetingRoomISolution s;
+	s.canAttendMeetings(vec);
+}
+
+void testMeetingRoomII() {
+	//vector<vector<int>> vec({ {0,30},{5,25},{10,15 },{12,20},{13,14},{14,15} }); // 5
+	vector<vector<int>> vec({ {7,10},{2,4},{7,10} });
+	MeetingRoomIISolution s;
+	cout << s.minMeetingRooms(vec);
 }
