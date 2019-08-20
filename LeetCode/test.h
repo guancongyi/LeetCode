@@ -543,18 +543,20 @@ void testMeetingRoomI() {
 
 void testMeetingRoomII() {
 	//vector<vector<int>> vec({ {0,30},{5,25},{10,15 },{12,20},{13,14},{14,15} }); // 5
-	vector<vector<int>> vec({ {7,10},{2,4},{7,10} });
+	vector<vector<int>> vec({ {7,10},{2,8},{8,10} });
 	MeetingRoomIISolution s;
-	cout << s.minMeetingRooms(vec);
+	cout << s.minMeetingRoomsAns(vec);
 }
 
 void testBTZigZagTraversal() {
-	TreeNode* t = new TreeNode(1);
-	t->left = new TreeNode(2);
-
-	t->left->left = new TreeNode(3);
-
-	t->left->left->left = new TreeNode(4);
+	TreeNode* t = new TreeNode(3);
+	t->left = new TreeNode(4);
+	t->right = new TreeNode(5);
+	t->left->left = new TreeNode(-7);
+	t->left->right = new TreeNode(-6);
+	t->left->left->left = new TreeNode(-7);
+	t->left->right->left = new TreeNode(-5);
+	t->left->right->left->right = new TreeNode(-4);
 	BTZigZagSolution s;
 	vector<vector<int>> ret = s.zigzagLevelOrder(t);
 
