@@ -37,19 +37,6 @@ public:
  * an array.
  * For each level, store the left most node and right most node.
  */
-#ifndef TREENODE
-#define TREENODE
-
-struct TreeNode {
-	int val;
-	TreeNode* left;
-	TreeNode* right;
-	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
-
-#endif TREENODE
-
-
 class WidthOfBTSolution {
 public:
 

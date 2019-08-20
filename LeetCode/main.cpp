@@ -1,6 +1,7 @@
 #include<iostream>
 #include<math.h>
 #include <queue>
+#include <deque>
 #include<unordered_map>
 #include<stack>
 #include<algorithm>
@@ -43,7 +44,7 @@ int main() {
 	//testValidAnagram();
 	//testTopKFreqWords();
 	//testMeetingRoomII();
-
+	testBTZigZagTraversal();
 	return 0;
 }
 

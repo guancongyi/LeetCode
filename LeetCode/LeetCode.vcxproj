@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClInclude Include="BestTimeToBuyAndSellStock.h" />
     <ClInclude Include="BloombergMock1.h" />
+    <ClInclude Include="BTZigZagTraversal.h" />
     <ClInclude Include="CandyCrush.h" />
     <ClInclude Include="ConstructBTFromPreorderAndInorder.h" />
     <ClInclude Include="CopyListWithRandomPtr.h" />

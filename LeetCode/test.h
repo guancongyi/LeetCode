@@ -31,6 +31,7 @@
 #include"TopKFreqWords.h"
 #include"MeetingRoomI.h"
 #include"MeetingRoomII.h"
+#include"BTZigZagTraversal.h"
 
 using namespace std;
 
@@ -545,4 +546,16 @@ void testMeetingRoomII() {
 	vector<vector<int>> vec({ {7,10},{2,4},{7,10} });
 	MeetingRoomIISolution s;
 	cout << s.minMeetingRooms(vec);
+}
+
+void testBTZigZagTraversal() {
+	TreeNode* t = new TreeNode(1);
+	t->left = new TreeNode(2);
+
+	t->left->left = new TreeNode(3);
+
+	t->left->left->left = new TreeNode(4);
+	BTZigZagSolution s;
+	vector<vector<int>> ret = s.zigzagLevelOrder(t);
+
 }
