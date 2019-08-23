@@ -125,6 +125,7 @@
     <ClInclude Include="CandyCrush.h" />
     <ClInclude Include="ConstructBTFromPreorderAndInorder.h" />
     <ClInclude Include="CopyListWithRandomPtr.h" />
+    <ClInclude Include="LongestPalindrome.h" />
     <ClInclude Include="MeetingRoomI.h" />
     <ClInclude Include="MeetingRoomII.h" />
     <ClInclude Include="test.h" />

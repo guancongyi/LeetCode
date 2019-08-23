@@ -33,6 +33,7 @@
 #include"MeetingRoomII.h"
 #include"BTZigZagTraversal.h"
 #include"Add2Numbers.h"
+#include"LongestPalindrome.h"
 
 using namespace std;
 
@@ -560,5 +561,30 @@ void testBTZigZagTraversal() {
 	t->left->right->left->right = new TreeNode(-4);
 	BTZigZagSolution s;
 	vector<vector<int>> ret = s.zigzagLevelOrder(t);
+
+}
+
+void testAdd2Numbers2() {
+	ListNode* curr = new ListNode(9);
+	ListNode* first = curr;
+	curr->next = new ListNode(9);
+	curr = curr->next;
+	curr->next = new ListNode(9);
+	curr = curr->next;
+	curr->next = new ListNode(9);
+	curr = curr->next;
+	curr->next = new ListNode(5);
+	curr = curr->next;
+
+	ListNode* second = new ListNode(5);
+	Add2Numbers2Solution s;
+	ListNode* res = s.addTwoNumbers(first, second);
+
+}
+
+void testLongestPalindrome() {
+	string s = "aabaaccaab";
+	LongestPalindromeSolution sol;
+	cout<< sol.longestPalindrome(s);
 
 }
