@@ -46,7 +46,8 @@ int main() {
 	//testMeetingRoomII();
 	//testBTZigZagTraversal();
 	//testAdd2Numbers2();
-	testLongestPalindrome();
+	//testLongestPalindrome();
+	testMaxSubArray();
 	return 0;
 }
 

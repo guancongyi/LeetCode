@@ -34,6 +34,7 @@
 #include"BTZigZagTraversal.h"
 #include"Add2Numbers.h"
 #include"LongestPalindrome.h"
+#include"MaxmiumSubarray.h"
 
 using namespace std;
 
@@ -587,4 +588,19 @@ void testLongestPalindrome() {
 	LongestPalindromeSolution sol;
 	cout<< sol.longestPalindrome(s);
 
+}
+
+void testMaxSubArray() {
+	vector<int> test;
+	test.push_back(-2);
+	test.push_back(1);
+	test.push_back(-3);
+	test.push_back(4);
+	test.push_back(-1);
+	test.push_back(2);
+	test.push_back(1);
+	test.push_back(-5);
+	test.push_back(4);
+	MaxSubArraySolution s;
+	cout << s.maxSubArray(test);
 }

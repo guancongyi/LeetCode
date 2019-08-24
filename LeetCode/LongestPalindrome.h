@@ -63,7 +63,7 @@ public:
 				left++;
 				right--;
 				if ((right - left) > (longest.second - longest.first)) {
-					longest = { left , right }; i = right;
+					longest = { left , right }; 
 				}
 			}
 			// case 3:
@@ -73,7 +73,7 @@ public:
 				left++;
 				right--;
 				if ((right - left ) > (longest.second - longest.first)) {
-					longest = { left , right }; i = right;
+					longest = { left , right }; 
 				}
 			}
 		}
