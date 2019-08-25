@@ -35,6 +35,7 @@
 #include"Add2Numbers.h"
 #include"LongestPalindrome.h"
 #include"MaxmiumSubarray.h"
+#include"HappyNumber.h"
 
 using namespace std;
 
@@ -603,4 +604,9 @@ void testMaxSubArray() {
 	test.push_back(4);
 	MaxSubArraySolution s;
 	cout << s.maxSubArray(test);
+}
+
+void testHappyNumber() {
+	HappySolution s;
+	cout << s.isHappy(0);
 }

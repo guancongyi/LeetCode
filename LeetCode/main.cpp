@@ -6,6 +6,7 @@
 #include<stack>
 #include<algorithm>
 #include<vector>
+#include<string>
 #include<list>
 
 #include"utils.h"
@@ -47,7 +48,8 @@ int main() {
 	//testBTZigZagTraversal();
 	//testAdd2Numbers2();
 	//testLongestPalindrome();
-	testMaxSubArray();
+	//testMaxSubArray();
+	testHappyNumber();
 	return 0;
 }
 
