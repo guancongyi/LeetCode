@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Add2Numbers.h" />
+    <ClInclude Include="AkunaC++.h" />
     <ClInclude Include="BestTimeToBuyAndSellStock.h" />
     <ClInclude Include="BloombergMock1.h" />
     <ClInclude Include="BTZigZagTraversal.h" />
@@ -127,9 +128,11 @@
     <ClInclude Include="CopyListWithRandomPtr.h" />
     <ClInclude Include="HappyNumber.h" />
     <ClInclude Include="LongestPalindrome.h" />
+    <ClInclude Include="MaxDepthBT.h" />
     <ClInclude Include="MaxmiumSubarray.h" />
     <ClInclude Include="MeetingRoomI.h" />
     <ClInclude Include="MeetingRoomII.h" />
+    <ClInclude Include="SortedArrayToBST.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="TopKFreqWords.h" />
     <ClInclude Include="utils.h" />

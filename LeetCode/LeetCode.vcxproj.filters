@@ -140,5 +140,14 @@
     <ClInclude Include="HappyNumber.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AkunaC++.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxDepthBT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedArrayToBST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

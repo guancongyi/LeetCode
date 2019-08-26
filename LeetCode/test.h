@@ -36,6 +36,9 @@
 #include"LongestPalindrome.h"
 #include"MaxmiumSubarray.h"
 #include"HappyNumber.h"
+#include"AkunaC++.h"
+#include"MaxDepthBT.h"
+#include"SortedArrayToBST.h"
 
 using namespace std;
 

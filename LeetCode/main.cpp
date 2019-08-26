@@ -49,7 +49,7 @@ int main() {
 	//testAdd2Numbers2();
 	//testLongestPalindrome();
 	//testMaxSubArray();
-	testHappyNumber();
+	//testHappyNumber();
 	return 0;
 }
 
