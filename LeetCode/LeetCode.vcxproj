@@ -127,6 +127,7 @@
     <ClInclude Include="ConstructBTFromPreorderAndInorder.h" />
     <ClInclude Include="CopyListWithRandomPtr.h" />
     <ClInclude Include="HappyNumber.h" />
+    <ClInclude Include="LinkedListCycle.h" />
     <ClInclude Include="LongestPalindrome.h" />
     <ClInclude Include="MaxDepthBT.h" />
     <ClInclude Include="MaxmiumSubarray.h" />
