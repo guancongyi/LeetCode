@@ -537,7 +537,7 @@ void testSwapNodesInPair() {
 
 void testTopKFreqWords() {
 	vector<string> strs({ "i", "love", "leetcode", "i", "love", "coding"});
-	TopKFreqWordsSolution s;
+	TopKsSolution s;
 	vector<string> ret = s.topKFrequent(strs, 2);
 	for (size_t i = 0; i < ret.size(); i++) {
 		cout << ret[i] << " ";
