@@ -50,6 +50,7 @@ int main() {
 	//testLongestPalindrome();
 	//testMaxSubArray();
 	//testHappyNumber();
+	testKClosestPointToOrigin();
 	return 0;
 }
 

@@ -40,6 +40,7 @@
 #include"MaxDepthBT.h"
 #include"SortedArrayToBST.h"
 #include"LinkedListCycle.h"
+#include"KClosestPointToOrigin.h"
 
 using namespace std;
 
@@ -613,4 +614,11 @@ void testMaxSubArray() {
 void testHappyNumber() {
 	HappySolution s;
 	cout << s.isHappy(0);
+}
+
+void testKClosestPointToOrigin() {
+	vector<vector<int>> vec({ {1,3},{-2,2} });
+	KClosestPointsSolution s;
+	vector<vector<int>> ret = s.kClosest(vec,1);
+	
 }

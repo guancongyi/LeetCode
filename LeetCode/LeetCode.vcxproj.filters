@@ -152,5 +152,8 @@
     <ClInclude Include="LinkedListCycle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="KClosestPointToOrigin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
