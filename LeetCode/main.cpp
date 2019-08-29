@@ -50,7 +50,9 @@ int main() {
 	//testLongestPalindrome();
 	//testMaxSubArray();
 	//testHappyNumber();
-	testKClosestPointToOrigin();
+	//testKClosestPointToOrigin();
+	BackSpaceCompSolution s;
+	s.backspaceCompare("y#fo##f","y#f#o##f");
 	return 0;
 }
 

@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClInclude Include="Add2Numbers.h" />
     <ClInclude Include="AkunaC++.h" />
+    <ClInclude Include="BackSpaceCompare.h" />
     <ClInclude Include="BestTimeToBuyAndSellStock.h" />
     <ClInclude Include="BloombergMock1.h" />
     <ClInclude Include="BTZigZagTraversal.h" />

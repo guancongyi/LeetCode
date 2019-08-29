@@ -155,5 +155,8 @@
     <ClInclude Include="KClosestPointToOrigin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BackSpaceCompare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
