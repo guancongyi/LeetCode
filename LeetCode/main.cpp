@@ -24,7 +24,6 @@ int main() {
 	//testMaxArea();
 	//testSubsets();
 	//testFlipAndInvertImage();
-	//testMaxAreaOfIsland();
 	//testDuplicates();
 	//testValidParentheses();
 	//testDecodeString();
@@ -51,8 +50,9 @@ int main() {
 	//testMaxSubArray();
 	//testHappyNumber();
 	//testKClosestPointToOrigin();
-	BackSpaceCompSolution s;
-	s.backspaceCompare("y#fo##f","y#f#o##f");
+	/*BackSpaceCompSolution s;
+	s.backspaceCompare("y#fo##f","y#f#o##f");*/
+	testIslandProblems();
 	return 0;
 }
 

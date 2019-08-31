@@ -127,6 +127,7 @@
     <ClInclude Include="CandyCrush.h" />
     <ClInclude Include="ConstructBTFromPreorderAndInorder.h" />
     <ClInclude Include="CopyListWithRandomPtr.h" />
+    <ClInclude Include="CountBtNodes.h" />
     <ClInclude Include="HappyNumber.h" />
     <ClInclude Include="KClosestPointToOrigin.h" />
     <ClInclude Include="LinkedListCycle.h" />
@@ -138,6 +139,7 @@
     <ClInclude Include="SortedArrayToBST.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="TopKFreqWords.h" />
+    <ClInclude Include="UniqueEmailAddr.h" />
     <ClInclude Include="utils.h" />
     <ClInclude Include="DecodeString.h" />
     <ClInclude Include="EvaluateDivision.h" />
@@ -147,7 +149,7 @@
     <ClInclude Include="KillProcess.h" />
     <ClInclude Include="LRUCache.h" />
     <ClInclude Include="MaxArea.h" />
-    <ClInclude Include="MaxAreaOfIsland.h" />
+    <ClInclude Include="IslandProblems.h" />
     <ClInclude Include="middleNode.h" />
     <ClInclude Include="MinStack.h" />
     <ClInclude Include="MovingAverage.h" />

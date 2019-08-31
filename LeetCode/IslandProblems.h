@@ -78,23 +78,42 @@ public:
 	}
 };
 
-
-class NumOfIslandsSolution {
+class NumOfIslandSolution {
 public:
 	int numIslands(vector<vector<char>>& grid) {
-		int M = grid.size(), N = grid[0].size();
+		
+		int M = grid.size();
+		if (M == 0)return 0;
+		int N = grid[0].size();
+		int num = 0;
 		vector<vector<int>> visited(M, vector<int>(N, 0));
+		stack<pair<int, int>> s;
 
-		for (int i = 0; i < grid.size(); i++){
-			for (int j = 0; j < grid[i].size(); j++){
-				if (visited[i][j] || grid[i][j] == 0) continue;
+		for (int i = 0; i < M; i++) {
+			for (int j = 0; j < N; j++) {
+				if (visited[i][j] || grid[i][j]=='0') continue;
 				else {
-					// do dfs
-					stack<pair<int, int>> s;
+					
 					s.push({ i,j });
 					visited[i][j] = 1;
+
+					// dfs
+					while (!s.empty()) {
+						pair<int, int> cur = s.top();
+						s.pop();
+						int x = cur.first, y = cur.second;
+
+						if ((x + 1) < M) { if (grid[x + 1][y] == '1' & !visited[x + 1][y]) s.push({ x + 1,y }); visited[x + 1][y] = 1; }
+						if ((x - 1) >= 0) { if (grid[x - 1][y] == '1' & !visited[x - 1][y]) s.push({ x - 1, y }); visited[x - 1][y] = 1; }
+						if ((y + 1) < N) { if (grid[x][y + 1] == '1' && !visited[x][y + 1]) s.push({ x, y + 1 }); visited[x][y + 1] = 1; }
+						if ((y - 1) >= 0) { if (grid[x][y - 1] == '1' && !visited[x][y - 1]) s.push({ x, y - 1 }); visited[x][y - 1] = 1; }
+						
+					}
+					num++;
 				}
 			}
 		}
+
+		return num;
 	}
 };

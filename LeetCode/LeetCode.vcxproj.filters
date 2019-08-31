@@ -47,9 +47,6 @@
     <ClInclude Include="FlipAndInvertImage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MaxAreaOfIsland.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="FindDuplicates.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -156,6 +153,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BackSpaceCompare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UniqueEmailAddr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IslandProblems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CountBtNodes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

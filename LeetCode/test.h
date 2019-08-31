@@ -7,7 +7,7 @@
 #include"MaxArea.h"
 #include"Subsets.h"
 #include"FlipAndInvertImage.h"
-#include"MaxAreaOfIsland.h"
+#include"IslandProblems.h"
 #include"FindDuplicates.h"
 #include"CandyCrush.h"
 #include"ValidParentheses.h"
@@ -42,6 +42,8 @@
 #include"LinkedListCycle.h"
 #include"KClosestPointToOrigin.h"
 #include"BackSpaceCompare.h"
+#include"UniqueEmailAddr.h"
+#include"CountBtNodes.h"
 
 using namespace std;
 
@@ -198,14 +200,15 @@ void testFlipAndInvertImage()
 	}
 }
 
-void testMaxAreaOfIsland()
+void testIslandProblems()
 {
-	vector<vector<int>> test;
+	vector<vector<char>> test;
 
-	test.push_back({ 1,1,0,0,0 });
-	test.push_back({ 1,1,0,0,0 });
-	test.push_back({ 0,0,0,1,1 });
-	test.push_back({ 0,0,0,1,1 });
+	/*test.push_back({ '1','1','0','0','0' });
+	test.push_back({ '1','1','0','0','0' });
+	test.push_back({ '0','0','1','0','0' });
+	test.push_back({ '0','0','0','1','1' });
+	test.push_back({ '0','0','0','1','1' });*/
 
 	/*test.push_back({ 0,0,1,0,0,0,0,1,0,0,0,0,0 });
 	test.push_back({ 0,0,0,0,0,0,0,1,1,1,0,0,0 });
@@ -218,7 +221,9 @@ void testMaxAreaOfIsland()
 	//test.push_back({ 0,0,0,0,0,0,0,1,1,0,0,0,0 });
 
 	MaxAreaOfIslandSolution s;
-	int ret = s.maxAreaOfIsland(test);
+	NumOfIslandSolution s2;
+	int ret = s2.numIslands(test);
+	//int ret = s.maxAreaOfIsland(test);
 	cout << ret;
 }
 
