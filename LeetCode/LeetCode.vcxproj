@@ -118,6 +118,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="1057-CampusBike.h" />
+    <ClInclude Include="422-ValidWordSquare.h" />
+    <ClInclude Include="766-ToeplitzMatrix.h" />
     <ClInclude Include="Add2Numbers.h" />
     <ClInclude Include="AkunaC++.h" />
     <ClInclude Include="BackSpaceCompare.h" />

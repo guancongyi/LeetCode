@@ -52,7 +52,10 @@ int main() {
 	//testKClosestPointToOrigin();
 	/*BackSpaceCompSolution s;
 	s.backspaceCompare("y#fo##f","y#f#o##f");*/
-	testIslandProblems();
+	//testIslandProblems();
+
+	testToeplitzMatrix();
+	//testCampusBike();
 	return 0;
 }
 

@@ -164,5 +164,14 @@
     <ClInclude Include="CountBtNodes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="1057-CampusBike.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="766-ToeplitzMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="422-ValidWordSquare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

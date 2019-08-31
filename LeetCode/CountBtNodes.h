@@ -13,4 +13,4 @@ public:
 		if (n->right != NULL) count += helper(n->right);
 		return count;
 	}
-}; #pragma once
+};

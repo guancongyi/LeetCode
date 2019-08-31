@@ -44,6 +44,9 @@
 #include"BackSpaceCompare.h"
 #include"UniqueEmailAddr.h"
 #include"CountBtNodes.h"
+#include"1057-CampusBike.h"
+#include"766-ToeplitzMatrix.h"
+#include"422-ValidWordSquare.h"
 
 using namespace std;
 
@@ -627,4 +630,23 @@ void testKClosestPointToOrigin() {
 	KClosestPointsSolution s;
 	vector<vector<int>> ret = s.kClosest(vec,1);
 	
+}
+
+void testCampusBike() {
+	CampusBikeSolution s;
+	vector<vector<int>> ws({ {0,0},{1,1},{2,0} });
+	vector<vector<int>> bs({ {1,0},{2,2},{2,1} });
+
+	s.assignBikes(ws, bs);
+
+}
+
+void testToeplitzMatrix() {
+	vector<vector<int>> test({ 
+		{1,2,3,4},
+		{5,1,2,3},
+		{9,5,1,2} });
+
+	ToeplitzMatrixSolution s;
+	cout << s.isToeplitzMatrix(test);
 }
