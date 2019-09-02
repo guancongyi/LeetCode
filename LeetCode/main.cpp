@@ -54,8 +54,10 @@ int main() {
 	s.backspaceCompare("y#fo##f","y#f#o##f");*/
 	//testIslandProblems();
 
-	testToeplitzMatrix();
+	//testToeplitzMatrix();
 	//testCampusBike();
+	
+	testMergeIntervals();
 	return 0;
 }
 

@@ -47,6 +47,7 @@
 #include"1057-CampusBike.h"
 #include"766-ToeplitzMatrix.h"
 #include"422-ValidWordSquare.h"
+#include"56-MergeIntervals.h"
 
 using namespace std;
 
@@ -306,7 +307,7 @@ void testKillProcess()
 	vector<int> pid({ 6,1,3,9,5,8,7,4,10 });
 	vector<int> ppid({ 5,8,4,5,10,5,3,8,0 });
 	KillProcessSolution k;
-	vector<int> ret = k.killProcess(pid, ppid, 10);
+	vector<int> ret = k.killProcess2nd(pid, ppid, 10);
 	for (size_t i = 0; i < ret.size(); i++)
 	{
 		cout << ret[i] << " ";
@@ -649,4 +650,15 @@ void testToeplitzMatrix() {
 
 	ToeplitzMatrixSolution s;
 	cout << s.isToeplitzMatrix(test);
+}
+
+void testMergeIntervals() {
+	vector<vector<int>> test({
+		{1,3},
+		/*{2,6},
+		{8,10},*/
+		{3,18} });
+
+	MergeIntervalsSolution s;
+	vector<vector<int>> ret = s.merge(test);
 }

@@ -173,5 +173,8 @@
     <ClInclude Include="422-ValidWordSquare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="56-MergeIntervals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

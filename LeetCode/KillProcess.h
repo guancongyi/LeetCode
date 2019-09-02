@@ -59,4 +59,29 @@ public:
 		
 
 	}
+
+	vector<int> killProcess2nd(vector<int>& pid, vector<int>& ppid, int kill) {
+		vector<int> ret;
+		stack<int> s;
+		s.push(kill);
+
+		//make a hash
+		multimap<int, int> mm;
+		for (int i = 0; i < pid.size(); i++) { mm.insert({ ppid[i], pid[i] }); }
+
+		typedef multimap<int, int>::iterator it;
+		while (!s.empty()) {
+			int cur = s.top();
+			s.pop();
+			ret.push_back(cur);
+
+			pair<it, it> res = mm.equal_range(cur);
+			for (auto j = res.first; j != res.second; j++) {
+				s.push(j->second);
+			}
+
+		}
+
+		return ret;
+	}
 };
