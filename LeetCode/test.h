@@ -48,6 +48,8 @@
 #include"766-ToeplitzMatrix.h"
 #include"422-ValidWordSquare.h"
 #include"56-MergeIntervals.h"
+#include"939-MinAreaOfRect.h"
+#include"993-CousinsInBT.h"
 
 using namespace std;
 
@@ -654,11 +656,28 @@ void testToeplitzMatrix() {
 
 void testMergeIntervals() {
 	vector<vector<int>> test({
+		{2,3},
+		{2,2},
+		{3,3},
 		{1,3},
-		/*{2,6},
-		{8,10},*/
-		{3,18} });
+		{5,7},
+		{2,2},
+		{4,6} });
 
 	MergeIntervalsSolution s;
 	vector<vector<int>> ret = s.merge(test);
+}
+
+void testMinAreaOfRect() {
+	vector<vector<int>> rects({
+	{1,1},
+	{1,3},
+	{1,4},
+	{3,1},
+	{3,3},
+	//{},
+	{3,4} });
+
+	MinAreaOfRectSolution s;
+	s.minAreaRect(rects);
 }

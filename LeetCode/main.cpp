@@ -8,6 +8,8 @@
 #include<vector>
 #include<string>
 #include<list>
+#include<set>
+#include<iterator>
 
 #include"utils.h"
 #include"test.h"
@@ -57,6 +59,8 @@ int main() {
 	//testToeplitzMatrix();
 	//testCampusBike();
 	
+	//testMinAreaOfRect();
+
 	testMergeIntervals();
 	return 0;
 }

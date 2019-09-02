@@ -7,7 +7,7 @@ struct comp {
 class MergeIntervalsSolution {
 public:
 
-	vector<vector<int>> merge(vector<vector<int>>& intervals) {
+	vector<vector<int>> merge1(vector<vector<int>>& intervals) {
 
 		vector<vector<int>> res;
 		if (intervals.size() == 0)return res;
@@ -34,5 +34,34 @@ public:
 		}
 		
 		return res;
+	}
+
+	vector<vector<int>> merge(vector<vector<int>>& intervals) {
+		vector<vector<int>> res;
+		if (intervals.size() == 0)return res;
+		if (intervals.size() == 1)return intervals;
+		sort(intervals.begin(), intervals.end(), comp());
+
+		map<int,vector<int>> sets;
+		int num = 0;
+		for (int i = 0; i < intervals.size(); i++){
+			if (i == 0) { sets[num] = intervals[i]; num++;  continue; }
+			auto j = sets.begin();
+			for (j; j != sets.end(); j++) {
+				auto s = j->second;
+				if (intervals[i][0] <= s[1]) {
+					sets[j->first][1] = max(sets[j->first][1], intervals[i][1]);
+					break;
+				}
+			}
+			if (j == sets.end()) {
+				sets[num] = { intervals[i] };
+				num++;
+			}
+		}
+		for (auto j = sets.begin(); j != sets.end(); j++) res.push_back(j->second);
+
+		return res;
+
 	}
 };

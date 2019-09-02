@@ -122,6 +122,7 @@
     <ClInclude Include="422-ValidWordSquare.h" />
     <ClInclude Include="56-MergeIntervals.h" />
     <ClInclude Include="766-ToeplitzMatrix.h" />
+    <ClInclude Include="993-CousinsInBT.h" />
     <ClInclude Include="Add2Numbers.h" />
     <ClInclude Include="AkunaC++.h" />
     <ClInclude Include="BackSpaceCompare.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="MaxmiumSubarray.h" />
     <ClInclude Include="MeetingRoomI.h" />
     <ClInclude Include="MeetingRoomII.h" />
+    <ClInclude Include="939-MinAreaOfRect.h" />
     <ClInclude Include="SortedArrayToBST.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="TopKFreqWords.h" />

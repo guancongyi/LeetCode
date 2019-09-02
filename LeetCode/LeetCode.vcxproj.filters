@@ -176,5 +176,11 @@
     <ClInclude Include="56-MergeIntervals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="939-MinAreaOfRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="993-CousinsInBT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
