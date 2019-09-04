@@ -118,9 +118,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="102-BTLevelOrderTrav.h" />
     <ClInclude Include="1057-CampusBike.h" />
     <ClInclude Include="422-ValidWordSquare.h" />
     <ClInclude Include="56-MergeIntervals.h" />
+    <ClInclude Include="724-FindPivotIndex.h" />
     <ClInclude Include="766-ToeplitzMatrix.h" />
     <ClInclude Include="993-CousinsInBT.h" />
     <ClInclude Include="Add2Numbers.h" />
@@ -152,7 +154,7 @@
     <ClInclude Include="FindDuplicates.h" />
     <ClInclude Include="FirstUniqChar.h" />
     <ClInclude Include="FlipAndInvertImage.h" />
-    <ClInclude Include="KillProcess.h" />
+    <ClInclude Include="582-KillProcess.h" />
     <ClInclude Include="LRUCache.h" />
     <ClInclude Include="MaxArea.h" />
     <ClInclude Include="IslandProblems.h" />
@@ -168,7 +170,7 @@
     <ClInclude Include="SortCharByFrequency.h" />
     <ClInclude Include="Subsets.h" />
     <ClInclude Include="SwapNodesInPairs.h" />
-    <ClInclude Include="TwoSum.h" />
+    <ClInclude Include="1-TwoSum.h" />
     <ClInclude Include="ValidAnagram.h" />
     <ClInclude Include="ValidBST.h" />
     <ClInclude Include="ValidParentheses.h" />

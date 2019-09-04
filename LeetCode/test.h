@@ -1,4 +1,4 @@
-#include"TwoSum.h"
+#include"1-TwoSum.h"
 #include"SwapNodesInPairs.h"
 #include"MergeTwoSortedList.h"
 #include"ReverseList.h"
@@ -16,7 +16,7 @@
 #include"MovingAverage.h"
 #include"FirstUniqChar.h"
 #include"ValidBST.h"
-#include "KillProcess.h"
+#include "582-KillProcess.h"
 #include"MinStack.h"
 #include"CopyListWithRandomPtr.h"
 #include"EvaluateDivision.h"
@@ -50,6 +50,8 @@
 #include"56-MergeIntervals.h"
 #include"939-MinAreaOfRect.h"
 #include"993-CousinsInBT.h"
+#include"102-BTLevelOrderTrav.h"
+#include"724-FindPivotIndex.h"
 
 using namespace std;
 

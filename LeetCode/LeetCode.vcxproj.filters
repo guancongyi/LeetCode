@@ -20,9 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TwoSum.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SwapNodesInPairs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -69,9 +66,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ValidBST.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="KillProcess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MinStack.h">
@@ -180,6 +174,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="993-CousinsInBT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="102-BTLevelOrderTrav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="724-FindPivotIndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="1-TwoSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="582-KillProcess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
