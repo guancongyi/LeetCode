@@ -53,6 +53,7 @@
 #include"102-BTLevelOrderTrav.h"
 #include"724-FindPivotIndex.h"
 #include"285-InorderSuccessorInBST.h"
+#include"298_549-BTLongestConsecutive.h"
 
 using namespace std;
 
@@ -685,3 +686,16 @@ void testMinAreaOfRect() {
 	s.minAreaRect(rects);
 }
 
+void testBTLongestConsecutive() {
+	TreeNode* t = new TreeNode(1);
+	t->left = new TreeNode(2);
+	t->right = new TreeNode(2);
+	t->left->left = new TreeNode(1);
+	t->left->right = new TreeNode(3);
+	//t->left->left->left = new TreeNode(-7);
+	t->left->right->right = new TreeNode(4);
+	//t->left->right->left->right = new TreeNode(-4);
+
+	BTLongestCOnsecutiveSolution s;
+	s.longestConsecutiveII(t);
+}

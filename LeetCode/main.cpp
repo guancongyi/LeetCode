@@ -63,6 +63,7 @@ int main() {
 	//testMinAreaOfRect();
 
 	//testMergeIntervals();
+	testBTLongestConsecutive();
 	return 0;
 }
 
