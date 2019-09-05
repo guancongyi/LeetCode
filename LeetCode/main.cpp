@@ -10,6 +10,7 @@
 #include<list>
 #include<set>
 #include<iterator>
+#include<sstream>
 
 #include"utils.h"
 #include"test.h"
@@ -61,7 +62,7 @@ int main() {
 	
 	//testMinAreaOfRect();
 
-	testMergeIntervals();
+	//testMergeIntervals();
 	return 0;
 }
 
