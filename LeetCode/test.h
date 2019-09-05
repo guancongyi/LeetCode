@@ -52,6 +52,7 @@
 #include"993-CousinsInBT.h"
 #include"102-BTLevelOrderTrav.h"
 #include"724-FindPivotIndex.h"
+#include"285-InorderSuccessorInBST.h"
 
 using namespace std;
 
@@ -683,3 +684,4 @@ void testMinAreaOfRect() {
 	MinAreaOfRectSolution s;
 	s.minAreaRect(rects);
 }
+

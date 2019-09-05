@@ -188,5 +188,8 @@
     <ClInclude Include="582-KillProcess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="285-InorderSuccessorInBST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

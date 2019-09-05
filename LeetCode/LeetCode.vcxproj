@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClInclude Include="102-BTLevelOrderTrav.h" />
     <ClInclude Include="1057-CampusBike.h" />
+    <ClInclude Include="285-InorderSuccessorInBST.h" />
     <ClInclude Include="422-ValidWordSquare.h" />
     <ClInclude Include="56-MergeIntervals.h" />
     <ClInclude Include="724-FindPivotIndex.h" />
