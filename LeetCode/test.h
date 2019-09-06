@@ -52,6 +52,9 @@
 #include"993-CousinsInBT.h"
 #include"102-BTLevelOrderTrav.h"
 #include"724-FindPivotIndex.h"
+#include"604-DesignCompressedStrIterator.h"
+#include"408-ValidWordAbbr.h"
+
 #include"285-InorderSuccessorInBST.h"
 #include"298_549-BTLongestConsecutive.h"
 
@@ -686,6 +689,15 @@ void testMinAreaOfRect() {
 	s.minAreaRect(rects);
 }
 
+
+void testValidWordAbbr() {
+	string w = "word";
+	string abbr = "1o1";
+	ValidWordAbbrSolution s;
+	s.validWordAbbreviation(w, abbr);
+}
+
+
 void testBTLongestConsecutive() {
 	TreeNode* t = new TreeNode(1);
 	t->left = new TreeNode(2);
@@ -698,4 +710,5 @@ void testBTLongestConsecutive() {
 
 	BTLongestCOnsecutiveSolution s;
 	s.longestConsecutiveII(t);
+
 }

@@ -188,10 +188,17 @@
     <ClInclude Include="582-KillProcess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="604-DesignCompressedStrIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="408-ValidWordAbbr.h">
+=======
     <ClInclude Include="285-InorderSuccessorInBST.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="298_549-BTLongestConsecutive.h">
+>>>>>>> ffc9c7586a0aea35f27f35dd3b8652cb35d16748
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

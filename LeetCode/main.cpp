@@ -63,7 +63,10 @@ int main() {
 	//testMinAreaOfRect();
 
 	//testMergeIntervals();
+
+	testValidWordAbbr();
 	testBTLongestConsecutive();
+
 	return 0;
 }
 

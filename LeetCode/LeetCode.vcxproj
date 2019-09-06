@@ -124,6 +124,7 @@
     <ClInclude Include="298_549-BTLongestConsecutive.h" />
     <ClInclude Include="422-ValidWordSquare.h" />
     <ClInclude Include="56-MergeIntervals.h" />
+    <ClInclude Include="604-DesignCompressedStrIterator.h" />
     <ClInclude Include="724-FindPivotIndex.h" />
     <ClInclude Include="766-ToeplitzMatrix.h" />
     <ClInclude Include="993-CousinsInBT.h" />
@@ -176,6 +177,7 @@
     <ClInclude Include="ValidAnagram.h" />
     <ClInclude Include="ValidBST.h" />
     <ClInclude Include="ValidParentheses.h" />
+    <ClInclude Include="408-ValidWordAbbr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
