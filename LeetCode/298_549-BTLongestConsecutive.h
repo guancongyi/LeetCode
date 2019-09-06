@@ -1,3 +1,9 @@
+/*
+	each node contain left : [inc, dec]
+					  right : [inc, dec]
+*/
+
+
 class BTLongestCOnsecutiveSolution {
 public:
 	int longestConsecutiveI(TreeNode* root) {
@@ -19,36 +25,43 @@ public:
 		return max(len, max(l, r));
 	}
 
+	int Max = 0;
 	int longestConsecutiveII(TreeNode* root) {
-		return search(root, NULL, 0, -1);
+		search(root);
+		return Max;
+
 	}
 
-	int search(TreeNode* n, TreeNode* p, int oldLen, int big) {
+	pair<int,int> search(TreeNode* n) {
 		
-		if (n==NULL) return oldLen;
-		int len = 0;
-		// big means the parent is the biggest 
-		if (p!= NULL && big==1 && n->val == p->val + 1) { len += 1; big = 1; }
-		else if (p!=NULL && big==0 && n->val == p->val - 1) { len += 1; big = 0; }
-		else { 
-			if (p!=NULL && n->val == p->val + 1) {
-				big = 1; len =2;
+
+		if (n == NULL) return { 0,0 };
+		int inc = 1, dec = 1;
+		auto left = search(n->left);
+		auto right = search(n->right);
+		if (n->left != NULL) {
+			// inc
+			if (n->val == n->left->val + 1) {
+				inc = left.first + 1;
 			}
-			else if (p != NULL && n->val == p->val - 1) {
-				big = 0; len =2;
+			else if (n->val == n->left->val - 1) {
+				dec = left.second + 1;
 			}
-			else {
-				big = -1; len = 1;
+		}
+		if (n->right != NULL) {
+			if (n->val == n->right->val + 1) {
+				inc = max(inc, right.first + 1);
+			}
+			else if (n->val == n->right->val - 1) {
+				dec = max(right.second + 1, dec);
 			}
 		}
 
-		int l = search(n->left, n, len, big);
-		int r = search(n->right, n, len, big);
-		if ( ((n->left != NULL && n->right != NULL) && (n->left->val == n->val - 1) && (n->right->val = n->val + 1)) ||
-			((n->left != NULL && n->right != NULL) && (n->left->val == n->val + 1) && (n->right->val = n->val - 1))){
-			return max(len, l + r -1);
-		}
-		return max(len, max(l, r));
+
+		Max = max(Max, inc + dec - 1);
+		return { inc, dec };
+
+
 	}
 
 
