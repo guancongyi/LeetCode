@@ -691,8 +691,8 @@ void testMinAreaOfRect() {
 
 
 void testValidWordAbbr() {
-	string w = "word";
-	string abbr = "1o1";
+	string w = "abbbbbbbbbb";
+	string abbr = "a10";
 	ValidWordAbbrSolution s;
 	s.validWordAbbreviation(w, abbr);
 }

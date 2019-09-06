@@ -55,17 +55,14 @@ int main() {
 	//testKClosestPointToOrigin();
 	/*BackSpaceCompSolution s;
 	s.backspaceCompare("y#fo##f","y#f#o##f");*/
-	//testIslandProblems();
 
+	//testIslandProblems();
 	//testToeplitzMatrix();
 	//testCampusBike();
-	
 	//testMinAreaOfRect();
-
 	//testMergeIntervals();
-
 	testValidWordAbbr();
-	testBTLongestConsecutive();
+	//testBTLongestConsecutive();
 
 	return 0;
 }
