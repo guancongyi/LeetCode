@@ -54,10 +54,10 @@
 #include"724-FindPivotIndex.h"
 #include"604-DesignCompressedStrIterator.h"
 #include"408-ValidWordAbbr.h"
-
 #include"285-InorderSuccessorInBST.h"
 #include"298_549-BTLongestConsecutive.h"
 #include"204-countPrimes.h"
+#include"380-InsertDelGetRandomO1.h"
 
 using namespace std;
 
