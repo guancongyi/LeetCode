@@ -1,205 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClInclude Include="header\1-TwoSum.h" />
+    <ClInclude Include="header\56-MergeIntervals.h" />
+    <ClInclude Include="header\102-BTLevelOrderTrav.h" />
+    <ClInclude Include="header\285-InorderSuccessorInBST.h" />
+    <ClInclude Include="header\298_549-BTLongestConsecutive.h" />
+    <ClInclude Include="header\408-ValidWordAbbr.h" />
+    <ClInclude Include="header\422-ValidWordSquare.h" />
+    <ClInclude Include="header\582-KillProcess.h" />
+    <ClInclude Include="header\604-DesignCompressedStrIterator.h" />
+    <ClInclude Include="header\724-FindPivotIndex.h" />
+    <ClInclude Include="header\766-ToeplitzMatrix.h" />
+    <ClInclude Include="header\939-MinAreaOfRect.h" />
+    <ClInclude Include="header\993-CousinsInBT.h" />
+    <ClInclude Include="header\1057-CampusBike.h" />
+    <ClInclude Include="header\Add2Numbers.h" />
+    <ClInclude Include="header\AkunaC++.h" />
+    <ClInclude Include="header\BackSpaceCompare.h" />
+    <ClInclude Include="header\BestTimeToBuyAndSellStock.h" />
+    <ClInclude Include="header\BloombergMock1.h" />
+    <ClInclude Include="header\BTZigZagTraversal.h" />
+    <ClInclude Include="header\CandyCrush.h" />
+    <ClInclude Include="header\ConstructBTFromPreorderAndInorder.h" />
+    <ClInclude Include="header\CopyListWithRandomPtr.h" />
+    <ClInclude Include="header\CountBtNodes.h" />
+    <ClInclude Include="header\DecodeString.h" />
+    <ClInclude Include="header\EvaluateDivision.h" />
+    <ClInclude Include="header\FindDuplicates.h" />
+    <ClInclude Include="header\FirstUniqChar.h" />
+    <ClInclude Include="header\FlipAndInvertImage.h" />
+    <ClInclude Include="header\HappyNumber.h" />
+    <ClInclude Include="header\IslandProblems.h" />
+    <ClInclude Include="header\KClosestPointToOrigin.h" />
+    <ClInclude Include="header\LinkedListCycle.h" />
+    <ClInclude Include="header\LongestPalindrome.h" />
+    <ClInclude Include="header\LRUCache.h" />
+    <ClInclude Include="header\MaxArea.h" />
+    <ClInclude Include="header\MaxDepthBT.h" />
+    <ClInclude Include="header\MaxmiumSubarray.h" />
+    <ClInclude Include="header\MeetingRoomI.h" />
+    <ClInclude Include="header\MeetingRoomII.h" />
+    <ClInclude Include="header\MergeTwoSortedList.h" />
+    <ClInclude Include="header\middleNode.h" />
+    <ClInclude Include="header\MinStack.h" />
+    <ClInclude Include="header\MovingAverage.h" />
+    <ClInclude Include="header\NextLargerNodes.h" />
+    <ClInclude Include="header\PopulatingRightPtrsI.h" />
+    <ClInclude Include="header\PopulatingRightPtrsII.h" />
+    <ClInclude Include="header\RectOverlap.h" />
+    <ClInclude Include="header\ReverseList.h" />
+    <ClInclude Include="header\SortCharByFrequency.h" />
+    <ClInclude Include="header\SortedArrayToBST.h" />
+    <ClInclude Include="header\Subsets.h" />
+    <ClInclude Include="header\SwapNodesInPairs.h" />
+    <ClInclude Include="header\test.h" />
+    <ClInclude Include="header\TopKFreqWords.h" />
+    <ClInclude Include="header\UniqueEmailAddr.h" />
+    <ClInclude Include="header\utils.h" />
+    <ClInclude Include="header\ValidAnagram.h" />
+    <ClInclude Include="header\ValidBST.h" />
+    <ClInclude Include="header\ValidParentheses.h" />
+    <ClInclude Include="header\204-countPrimes.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="SwapNodesInPairs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MergeTwoSortedList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ReverseList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="middleNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NextLargerNodes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MaxArea.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Subsets.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FlipAndInvertImage.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FindDuplicates.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CandyCrush.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ValidParentheses.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DecodeString.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BestTimeToBuyAndSellStock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MovingAverage.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FirstUniqChar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ValidBST.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MinStack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CopyListWithRandomPtr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EvaluateDivision.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LRUCache.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RectOverlap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BloombergMock1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ConstructBTFromPreorderAndInorder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PopulatingRightPtrsI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PopulatingRightPtrsII.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SortCharByFrequency.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ValidAnagram.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="utils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TopKFreqWords.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="test.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MeetingRoomI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MeetingRoomII.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BTZigZagTraversal.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Add2Numbers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LongestPalindrome.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MaxmiumSubarray.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HappyNumber.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AkunaC++.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MaxDepthBT.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SortedArrayToBST.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LinkedListCycle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="KClosestPointToOrigin.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BackSpaceCompare.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UniqueEmailAddr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IslandProblems.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CountBtNodes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="1057-CampusBike.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="766-ToeplitzMatrix.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="422-ValidWordSquare.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="56-MergeIntervals.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="939-MinAreaOfRect.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="993-CousinsInBT.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="102-BTLevelOrderTrav.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="724-FindPivotIndex.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="1-TwoSum.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="582-KillProcess.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="604-DesignCompressedStrIterator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="408-ValidWordAbbr.h">
-=======
-    <ClInclude Include="285-InorderSuccessorInBST.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="298_549-BTLongestConsecutive.h">
->>>>>>> ffc9c7586a0aea35f27f35dd3b8652cb35d16748
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="source\main.cpp" />
   </ItemGroup>
 </Project>

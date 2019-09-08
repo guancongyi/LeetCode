@@ -57,6 +57,7 @@
 
 #include"285-InorderSuccessorInBST.h"
 #include"298_549-BTLongestConsecutive.h"
+#include"204-countPrimes.h"
 
 using namespace std;
 
@@ -694,7 +695,7 @@ void testValidWordAbbr() {
 	string w = "abbbbbbbbbb";
 	string abbr = "a10";
 	ValidWordAbbrSolution s;
-	s.validWordAbbreviation(w, abbr);
+	cout << s.validWordAbbreviation(w, abbr);
 }
 
 

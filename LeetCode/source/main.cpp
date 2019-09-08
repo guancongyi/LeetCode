@@ -12,8 +12,8 @@
 #include<iterator>
 #include<sstream>
 
-#include"utils.h"
-#include"test.h"
+#include"..\header\utils.h"
+#include"..\header\test.h"
 
 
 
