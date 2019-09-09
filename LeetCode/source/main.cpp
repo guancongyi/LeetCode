@@ -61,8 +61,9 @@ int main() {
 	//testCampusBike();
 	//testMinAreaOfRect();
 	//testMergeIntervals();
-	testValidWordAbbr();
+	//testValidWordAbbr();
 	//testBTLongestConsecutive();
+	testGenerateParenthesis();
 
 	return 0;
 }

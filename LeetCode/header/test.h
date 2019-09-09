@@ -58,6 +58,7 @@
 #include"298_549-BTLongestConsecutive.h"
 #include"204-countPrimes.h"
 #include"380-InsertDelGetRandomO1.h"
+#include"22-GenerateParenthesis.h"
 
 using namespace std;
 
@@ -712,4 +713,9 @@ void testBTLongestConsecutive() {
 	BTLongestCOnsecutiveSolution s;
 	s.longestConsecutiveII(t);
 
+}
+
+void testGenerateParenthesis() {
+	GenerateParenthesisSolution s;
+	s.generateParenthesis(2);
 }

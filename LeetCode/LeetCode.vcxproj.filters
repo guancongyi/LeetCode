@@ -63,6 +63,7 @@
     <ClInclude Include="header\ValidParentheses.h" />
     <ClInclude Include="header\204-countPrimes.h" />
     <ClInclude Include="header\380-InsertDelGetRandomO1.h" />
+    <ClInclude Include="header\22-GenerateParenthesis.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />

@@ -121,6 +121,7 @@
     <ClInclude Include="header\102-BTLevelOrderTrav.h" />
     <ClInclude Include="header\1057-CampusBike.h" />
     <ClInclude Include="header\204-countPrimes.h" />
+    <ClInclude Include="header\22-GenerateParenthesis.h" />
     <ClInclude Include="header\285-InorderSuccessorInBST.h" />
     <ClInclude Include="header\298_549-BTLongestConsecutive.h" />
     <ClInclude Include="header\380-InsertDelGetRandomO1.h" />
