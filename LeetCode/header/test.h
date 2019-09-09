@@ -5,7 +5,7 @@
 #include"middleNode.h"
 #include"NextLargerNodes.h"
 #include"MaxArea.h"
-#include"Subsets.h"
+#include"78-Subsets.h"
 #include"FlipAndInvertImage.h"
 #include"IslandProblems.h"
 #include"FindDuplicates.h"
@@ -184,9 +184,9 @@ void testSubsets()
 	test.push_back(2);
 	test.push_back(3);
 	test.push_back(4);
-	test.push_back(5);
-	Subsets s;
-	vector<vector<int>> ret = s.subsetss(test);
+	//test.push_back(5);
+	Subsets1_2 s;
+	vector<vector<int>> ret = s.subsets(test);
 	for (size_t i = 0; i < ret.size(); i++)
 	{
 		for (size_t j = 0; j < ret[i].size(); j++) {
@@ -691,14 +691,12 @@ void testMinAreaOfRect() {
 	s.minAreaRect(rects);
 }
 
-
 void testValidWordAbbr() {
 	string w = "abbbbbbbbbb";
 	string abbr = "a10";
 	ValidWordAbbrSolution s;
 	cout << s.validWordAbbreviation(w, abbr);
 }
-
 
 void testBTLongestConsecutive() {
 	TreeNode* t = new TreeNode(1);

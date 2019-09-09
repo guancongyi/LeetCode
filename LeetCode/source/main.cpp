@@ -25,7 +25,7 @@ int main() {
 	//testReverseList();
 	//testNextLargerNodes();
 	//testMaxArea();
-	//testSubsets();
+	testSubsets();
 	//testFlipAndInvertImage();
 	//testDuplicates();
 	//testValidParentheses();
@@ -63,7 +63,7 @@ int main() {
 	//testMergeIntervals();
 	//testValidWordAbbr();
 	//testBTLongestConsecutive();
-	testGenerateParenthesis();
+	//testGenerateParenthesis();
 
 	return 0;
 }

@@ -52,7 +52,6 @@
     <ClInclude Include="header\ReverseList.h" />
     <ClInclude Include="header\SortCharByFrequency.h" />
     <ClInclude Include="header\SortedArrayToBST.h" />
-    <ClInclude Include="header\Subsets.h" />
     <ClInclude Include="header\SwapNodesInPairs.h" />
     <ClInclude Include="header\test.h" />
     <ClInclude Include="header\TopKFreqWords.h" />
@@ -64,6 +63,7 @@
     <ClInclude Include="header\204-countPrimes.h" />
     <ClInclude Include="header\380-InsertDelGetRandomO1.h" />
     <ClInclude Include="header\22-GenerateParenthesis.h" />
+    <ClInclude Include="header\78-Subsets.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />

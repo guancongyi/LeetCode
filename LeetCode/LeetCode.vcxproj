@@ -174,7 +174,7 @@
     <ClInclude Include="header\ReverseList.h" />
     <ClInclude Include="header\MergeTwoSortedList.h" />
     <ClInclude Include="header\SortCharByFrequency.h" />
-    <ClInclude Include="header\Subsets.h" />
+    <ClInclude Include="header\78-Subsets.h" />
     <ClInclude Include="header\SwapNodesInPairs.h" />
     <ClInclude Include="header\1-TwoSum.h" />
     <ClInclude Include="header\ValidAnagram.h" />

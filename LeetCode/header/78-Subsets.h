@@ -49,3 +49,25 @@ public:
 
 
 };
+
+class Subsets1_2 {
+public:
+	vector<vector<int>> subsets(vector<int>& nums) {
+		vector<vector<int>> res;
+		vector<int> temp;
+		bt(res, nums, temp, 0);
+		return res;
+	}
+
+	void bt(vector<vector<int>>& v, vector<int>& nums, vector<int> temp, int id) {
+		v.push_back(temp);
+		for (int i = id; i < nums.size(); i++) {
+			temp.push_back(nums[i]);
+			bt(v, nums, temp, i + 1);
+			temp.pop_back();
+		}
+				
+	}
+
+
+};

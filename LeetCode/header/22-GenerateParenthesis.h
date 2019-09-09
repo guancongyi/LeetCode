@@ -12,19 +12,18 @@ public:
 	void clever(vector<string>& res, string str, int open, int close, int max) {
 		if (str.length() == 2 * max) {
 			res.push_back(str);
-			return;
 		}
-		
+
 		if (open < max) {
-			str += '(';
-			clever(res, str, ++open, close, max);
+
+
+			clever(res, str + "(", open + 1, close, max);
 		}
 
 		if (close < open) {
-			str += ')';
-			clever(res, str, open, ++close, max);
+
+			clever(res, str + ")", open, close + 1, max);
 		}
-		return;
 	}
 
 
