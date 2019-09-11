@@ -125,6 +125,7 @@
     <ClInclude Include="header\285-InorderSuccessorInBST.h" />
     <ClInclude Include="header\298_549-BTLongestConsecutive.h" />
     <ClInclude Include="header\380-InsertDelGetRandomO1.h" />
+    <ClInclude Include="header\3_159_340LongestSubstring.h" />
     <ClInclude Include="header\422-ValidWordSquare.h" />
     <ClInclude Include="header\56-MergeIntervals.h" />
     <ClInclude Include="header\604-DesignCompressedStrIterator.h" />

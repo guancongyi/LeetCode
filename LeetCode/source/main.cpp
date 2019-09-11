@@ -64,7 +64,7 @@ int main() {
 	//testValidWordAbbr();
 	//testBTLongestConsecutive();
 	//testGenerateParenthesis();
-
+	testLongestSubString();
 	return 0;
 }
 

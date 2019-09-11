@@ -59,6 +59,7 @@
 #include"204-countPrimes.h"
 #include"380-InsertDelGetRandomO1.h"
 #include"22-GenerateParenthesis.h"
+#include"3_159_340LongestSubstring.h"
 
 using namespace std;
 
@@ -716,4 +717,12 @@ void testBTLongestConsecutive() {
 void testGenerateParenthesis() {
 	GenerateParenthesisSolution s;
 	s.generateParenthesis(2);
+}
+
+void testLongestSubString() {
+	string str = "aba";
+	LongestSubStringSolution s;
+	int ret = s.lengthOfLongestSubstringKDistinct(str,1);
+
+
 }
