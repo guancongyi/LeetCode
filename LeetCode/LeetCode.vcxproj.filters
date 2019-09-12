@@ -65,6 +65,8 @@
     <ClInclude Include="header\22-GenerateParenthesis.h" />
     <ClInclude Include="header\78-Subsets.h" />
     <ClInclude Include="header\3_159_340LongestSubstring.h" />
+    <ClInclude Include="header\55-JumpGame.h" />
+    <ClInclude Include="header\376-WiggleSubsequence.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />

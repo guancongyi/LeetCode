@@ -60,6 +60,8 @@
 #include"380-InsertDelGetRandomO1.h"
 #include"22-GenerateParenthesis.h"
 #include"3_159_340LongestSubstring.h"
+#include"55-JumpGame.h"
+#include"376-WiggleSubsequence.h"
 
 using namespace std;
 
@@ -722,7 +724,14 @@ void testGenerateParenthesis() {
 void testLongestSubString() {
 	string str = "aba";
 	LongestSubStringSolution s;
+
 	int ret = s.lengthOfLongestSubstringKDistinct(str,1);
 
 
+}
+
+void testJumpGame() {
+	vector<int> n = { 4,2,0,0,1,1,4,4,4,0,4,0};
+	JumpGameSolution s;
+	cout << s.canJump(n) << endl;
 }
