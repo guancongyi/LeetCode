@@ -134,6 +134,7 @@
     <ClInclude Include="header\56-MergeIntervals.h" />
     <ClInclude Include="header\604-DesignCompressedStrIterator.h" />
     <ClInclude Include="header\724-FindPivotIndex.h" />
+    <ClInclude Include="header\763-PartitionLabel.h" />
     <ClInclude Include="header\766-ToeplitzMatrix.h" />
     <ClInclude Include="header\993-CousinsInBT.h" />
     <ClInclude Include="header\Add2Numbers.h" />

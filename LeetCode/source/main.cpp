@@ -66,7 +66,8 @@ int main() {
 	//testGenerateParenthesis();
 	//testLongestSubString();
 	//testJumpGame();
-	testQreConstructByHeight();
+	//testQreConstructByHeight();
+	testPartitionLabel();
 	return 0;
 }
 

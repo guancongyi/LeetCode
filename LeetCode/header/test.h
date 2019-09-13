@@ -64,6 +64,7 @@
 #include"376-WiggleSubsequence.h"
 #include"222-CountCompleteTreeNodes.h"
 #include"406-QreconstructionByHeight.h"
+#include"763-PartitionLabel.h"
 
 using namespace std;
 
@@ -752,4 +753,10 @@ void testQreConstructByHeight(){
 	QreconstructByHeightSolution s;
 	s.reconstructQueue(test);
 
+}
+
+void testPartitionLabel() {
+	string s = "abcbadede";
+	PartitionLabelSolution ss;
+	ss.partitionLabels(s);
 }

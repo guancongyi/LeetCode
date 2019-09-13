@@ -69,6 +69,7 @@
     <ClInclude Include="header\200_95-IslandProblems.h" />
     <ClInclude Include="header\222-CountCompleteTreeNodes.h" />
     <ClInclude Include="header\406-QreconstructionByHeight.h" />
+    <ClInclude Include="header\763-PartitionLabel.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
