@@ -7,7 +7,7 @@
 #include"MaxArea.h"
 #include"78-Subsets.h"
 #include"FlipAndInvertImage.h"
-#include"IslandProblems.h"
+#include"200_95-IslandProblems.h"
 #include"FindDuplicates.h"
 #include"CandyCrush.h"
 #include"ValidParentheses.h"
@@ -62,6 +62,8 @@
 #include"3_159_340LongestSubstring.h"
 #include"55-JumpGame.h"
 #include"376-WiggleSubsequence.h"
+#include"222-CountCompleteTreeNodes.h"
+#include"406-QreconstructionByHeight.h"
 
 using namespace std;
 
@@ -734,4 +736,20 @@ void testJumpGame() {
 	vector<int> n = { 4,2,0,0,1,1,4,4,4,0,4,0};
 	JumpGameSolution s;
 	cout << s.canJump(n) << endl;
+}
+
+void testQreConstructByHeight(){
+	vector<vector<int>> test({
+		{7,0},
+		{4,4},
+		{7,1},
+		{5,0},
+		{6,1},
+		{5,2},
+		{2,6},
+		{1,1} });
+
+	QreconstructByHeightSolution s;
+	s.reconstructQueue(test);
+
 }

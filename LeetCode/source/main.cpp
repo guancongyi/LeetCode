@@ -65,7 +65,8 @@ int main() {
 	//testBTLongestConsecutive();
 	//testGenerateParenthesis();
 	//testLongestSubString();
-	testJumpGame();
+	//testJumpGame();
+	testQreConstructByHeight();
 	return 0;
 }
 

@@ -122,11 +122,13 @@
     <ClInclude Include="header\1057-CampusBike.h" />
     <ClInclude Include="header\204-countPrimes.h" />
     <ClInclude Include="header\22-GenerateParenthesis.h" />
+    <ClInclude Include="header\222-CountCompleteTreeNodes.h" />
     <ClInclude Include="header\285-InorderSuccessorInBST.h" />
     <ClInclude Include="header\298_549-BTLongestConsecutive.h" />
     <ClInclude Include="header\376-WiggleSubsequence.h" />
     <ClInclude Include="header\380-InsertDelGetRandomO1.h" />
     <ClInclude Include="header\3_159_340LongestSubstring.h" />
+    <ClInclude Include="header\406-QreconstructionByHeight.h" />
     <ClInclude Include="header\422-ValidWordSquare.h" />
     <ClInclude Include="header\55-JumpGame.h" />
     <ClInclude Include="header\56-MergeIntervals.h" />
@@ -166,7 +168,7 @@
     <ClInclude Include="header\582-KillProcess.h" />
     <ClInclude Include="header\LRUCache.h" />
     <ClInclude Include="header\MaxArea.h" />
-    <ClInclude Include="header\IslandProblems.h" />
+    <ClInclude Include="header\200_95-IslandProblems.h" />
     <ClInclude Include="header\middleNode.h" />
     <ClInclude Include="header\MinStack.h" />
     <ClInclude Include="header\MovingAverage.h" />

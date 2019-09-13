@@ -31,7 +31,6 @@
     <ClInclude Include="header\FirstUniqChar.h" />
     <ClInclude Include="header\FlipAndInvertImage.h" />
     <ClInclude Include="header\HappyNumber.h" />
-    <ClInclude Include="header\IslandProblems.h" />
     <ClInclude Include="header\KClosestPointToOrigin.h" />
     <ClInclude Include="header\LinkedListCycle.h" />
     <ClInclude Include="header\LongestPalindrome.h" />
@@ -67,6 +66,9 @@
     <ClInclude Include="header\3_159_340LongestSubstring.h" />
     <ClInclude Include="header\55-JumpGame.h" />
     <ClInclude Include="header\376-WiggleSubsequence.h" />
+    <ClInclude Include="header\200_95-IslandProblems.h" />
+    <ClInclude Include="header\222-CountCompleteTreeNodes.h" />
+    <ClInclude Include="header\406-QreconstructionByHeight.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
