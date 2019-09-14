@@ -70,6 +70,7 @@
     <ClInclude Include="header\222-CountCompleteTreeNodes.h" />
     <ClInclude Include="header\406-QreconstructionByHeight.h" />
     <ClInclude Include="header\763-PartitionLabel.h" />
+    <ClInclude Include="header\455-AssignCookies.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />

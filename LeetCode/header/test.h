@@ -65,6 +65,7 @@
 #include"222-CountCompleteTreeNodes.h"
 #include"406-QreconstructionByHeight.h"
 #include"763-PartitionLabel.h"
+#include"455-AssignCookies.h"
 
 using namespace std;
 
@@ -759,4 +760,11 @@ void testPartitionLabel() {
 	string s = "abcbadede";
 	PartitionLabelSolution ss;
 	ss.partitionLabels(s);
+}
+
+void testAssignCookies() {
+	vector<int> s = { 5,6,7,8 };
+	vector<int> g = { 10, 9,8,7 };
+	AssignCookiesSolution ss;
+	ss.findContentChildren(g, s);
 }
