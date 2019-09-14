@@ -67,8 +67,9 @@ int main() {
 	//testLongestSubString();
 	//testJumpGame();
 	//testQreConstructByHeight();
-	//testPartitionLabel();
-	testAssignCookies();
+	testPartitionLabel();
+	//testAssignCookies();
+	testReorganizeStr();
 	return 0;
 }
 

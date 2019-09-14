@@ -1,7 +1,8 @@
+#ifndef PS
+#define PS
 class PartitionLabelSolution {
 public:
 	vector<int> partitionLabels(string S) {
-		//if (S.length() == 1)return { 1 };
 		map<char, int> mp;
 
 		for (int i = 0; i < S.length(); i++) { mp[S[i]] = i; }
@@ -13,9 +14,9 @@ public:
 			if (mp[S[i]] >= i) {
 				Max = max(Max, mp[S[i]]);
 			}
-			
+
 			if (i == Max) {
-				res.push_back(count+1);
+				res.push_back(count + 1);
 				count = -1;
 			}
 			count++;
@@ -23,3 +24,6 @@ public:
 		return res;
 	}
 };
+#endif // !1
+
+

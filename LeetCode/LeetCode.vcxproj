@@ -137,6 +137,7 @@
     <ClInclude Include="header\724-FindPivotIndex.h" />
     <ClInclude Include="header\763-PartitionLabel.h" />
     <ClInclude Include="header\766-ToeplitzMatrix.h" />
+    <ClInclude Include="header\767-ReorganizeString.h" />
     <ClInclude Include="header\993-CousinsInBT.h" />
     <ClInclude Include="header\Add2Numbers.h" />
     <ClInclude Include="header\AkunaC++.h" />

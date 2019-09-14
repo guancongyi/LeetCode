@@ -66,6 +66,8 @@
 #include"406-QreconstructionByHeight.h"
 #include"763-PartitionLabel.h"
 #include"455-AssignCookies.h"
+#include"763-PartitionLabel.h"
+#include "767-ReorganizeString.h"
 
 using namespace std;
 
@@ -758,8 +760,8 @@ void testQreConstructByHeight(){
 
 void testPartitionLabel() {
 	string s = "abcbadede";
-	PartitionLabelSolution ss;
-	ss.partitionLabels(s);
+	PartitionLabelSolution ps;
+	ps.partitionLabels(s);
 }
 
 void testAssignCookies() {
@@ -767,4 +769,10 @@ void testAssignCookies() {
 	vector<int> g = { 10, 9,8,7 };
 	AssignCookiesSolution ss;
 	ss.findContentChildren(g, s);
+}
+
+void testReorganizeStr() {
+	string str = "aaab";
+	ReorganizeStringSolution s;
+	s.reorganizeString(str);
 }
