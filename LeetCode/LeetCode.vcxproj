@@ -128,6 +128,7 @@
     <ClInclude Include="header\376-WiggleSubsequence.h" />
     <ClInclude Include="header\380-InsertDelGetRandomO1.h" />
     <ClInclude Include="header\3_159_340LongestSubstring.h" />
+    <ClInclude Include="header\402-RemoveKDigits.h" />
     <ClInclude Include="header\406-QreconstructionByHeight.h" />
     <ClInclude Include="header\422-ValidWordSquare.h" />
     <ClInclude Include="header\455-AssignCookies.h" />

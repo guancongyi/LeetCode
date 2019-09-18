@@ -68,6 +68,7 @@
 #include"455-AssignCookies.h"
 #include"763-PartitionLabel.h"
 #include "767-ReorganizeString.h"
+#include"402-RemoveKDigits.h"
 
 using namespace std;
 
@@ -775,4 +776,10 @@ void testReorganizeStr() {
 	string str = "aaab";
 	ReorganizeStringSolution s;
 	s.reorganizeString(str);
+}
+
+void testRemoveKDigits() {
+	string s = "181510534";
+	RemoveKDigitsSolution ss;
+	ss.removeKdigits(s,5);
 }

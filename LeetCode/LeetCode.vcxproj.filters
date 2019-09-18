@@ -72,6 +72,7 @@
     <ClInclude Include="header\763-PartitionLabel.h" />
     <ClInclude Include="header\455-AssignCookies.h" />
     <ClInclude Include="header\767-ReorganizeString.h" />
+    <ClInclude Include="header\402-RemoveKDigits.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
