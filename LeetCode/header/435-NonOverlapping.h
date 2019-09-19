@@ -1,4 +1,4 @@
-class Solution {
+class NonOverlappingSolution {
 public:
 	struct comp {
 		bool operator() (const vector<int>& lhs, const vector<int>& rhs) {

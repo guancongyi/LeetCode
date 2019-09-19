@@ -75,6 +75,7 @@
     <ClInclude Include="header\402-RemoveKDigits.h" />
     <ClInclude Include="header\452-MinimumNumberOfArrows.h" />
     <ClInclude Include="header\435-NonOverlapping.h" />
+    <ClInclude Include="header\279-PerfectSquare.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />

@@ -71,6 +71,7 @@
 #include"402-RemoveKDigits.h"
 #include"452-MinimumNumberOfArrows.h"
 #include"435-NonOverlapping.h"
+#include"279-PerfectSquare.h"
 
 using namespace std;
 

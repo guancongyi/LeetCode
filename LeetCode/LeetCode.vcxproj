@@ -123,6 +123,7 @@
     <ClInclude Include="header\204-countPrimes.h" />
     <ClInclude Include="header\22-GenerateParenthesis.h" />
     <ClInclude Include="header\222-CountCompleteTreeNodes.h" />
+    <ClInclude Include="header\279-PerfectSquare.h" />
     <ClInclude Include="header\285-InorderSuccessorInBST.h" />
     <ClInclude Include="header\298_549-BTLongestConsecutive.h" />
     <ClInclude Include="header\376-WiggleSubsequence.h" />
