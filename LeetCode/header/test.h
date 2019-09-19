@@ -69,6 +69,8 @@
 #include"763-PartitionLabel.h"
 #include "767-ReorganizeString.h"
 #include"402-RemoveKDigits.h"
+#include"452-MinimumNumberOfArrows.h"
+#include"435-NonOverlapping.h"
 
 using namespace std;
 

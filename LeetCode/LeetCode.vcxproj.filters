@@ -73,6 +73,8 @@
     <ClInclude Include="header\455-AssignCookies.h" />
     <ClInclude Include="header\767-ReorganizeString.h" />
     <ClInclude Include="header\402-RemoveKDigits.h" />
+    <ClInclude Include="header\452-MinimumNumberOfArrows.h" />
+    <ClInclude Include="header\435-NonOverlapping.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />

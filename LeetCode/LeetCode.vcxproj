@@ -131,6 +131,8 @@
     <ClInclude Include="header\402-RemoveKDigits.h" />
     <ClInclude Include="header\406-QreconstructionByHeight.h" />
     <ClInclude Include="header\422-ValidWordSquare.h" />
+    <ClInclude Include="header\435-NonOverlapping.h" />
+    <ClInclude Include="header\452-MinimumNumberOfArrows.h" />
     <ClInclude Include="header\455-AssignCookies.h" />
     <ClInclude Include="header\55-JumpGame.h" />
     <ClInclude Include="header\56-MergeIntervals.h" />
