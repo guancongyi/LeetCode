@@ -786,3 +786,8 @@ void testRemoveKDigits() {
 	RemoveKDigitsSolution ss;
 	ss.removeKdigits(s,5);
 }
+
+void testPerfectSquare() {
+	PerfectSquareSolution s;
+	s.numSquares(25);
+}

@@ -70,7 +70,8 @@ int main() {
 	//testPartitionLabel();
 	//testAssignCookies();
 	//testReorganizeStr();
-	testRemoveKDigits();
+	//testRemoveKDigits();
+	testPerfectSquare();
 	return 0;
 }
 
