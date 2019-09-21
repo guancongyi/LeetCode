@@ -72,6 +72,7 @@
 #include"452-MinimumNumberOfArrows.h"
 #include"435-NonOverlapping.h"
 #include"279-PerfectSquare.h"
+#include"101-SymmetricTree.h"
 
 using namespace std;
 
@@ -791,3 +792,4 @@ void testPerfectSquare() {
 	PerfectSquareSolution s;
 	s.numSquares(25);
 }
+

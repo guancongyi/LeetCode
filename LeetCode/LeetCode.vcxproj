@@ -118,6 +118,7 @@
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="header\101-SymmetricTree.h" />
     <ClInclude Include="header\102-BTLevelOrderTrav.h" />
     <ClInclude Include="header\1057-CampusBike.h" />
     <ClInclude Include="header\204-countPrimes.h" />
