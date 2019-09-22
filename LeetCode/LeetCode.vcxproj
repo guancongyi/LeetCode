@@ -119,7 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\101-SymmetricTree.h" />
-    <ClInclude Include="header\102-BTLevelOrderTrav.h" />
+    <ClInclude Include="header\102_107-BTLevelOrderTrav.h" />
     <ClInclude Include="header\1057-CampusBike.h" />
     <ClInclude Include="header\204-countPrimes.h" />
     <ClInclude Include="header\22-GenerateParenthesis.h" />
@@ -144,7 +144,7 @@
     <ClInclude Include="header\766-ToeplitzMatrix.h" />
     <ClInclude Include="header\767-ReorganizeString.h" />
     <ClInclude Include="header\993-CousinsInBT.h" />
-    <ClInclude Include="header\Add2Numbers.h" />
+    <ClInclude Include="header\445-Add2Numbers.h" />
     <ClInclude Include="header\AkunaC++.h" />
     <ClInclude Include="header\BackSpaceCompare.h" />
     <ClInclude Include="header\BestTimeToBuyAndSellStock.h" />
