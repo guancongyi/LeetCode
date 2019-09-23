@@ -121,6 +121,8 @@
     <ClInclude Include="header\101-SymmetricTree.h" />
     <ClInclude Include="header\102_107-BTLevelOrderTrav.h" />
     <ClInclude Include="header\1057-CampusBike.h" />
+    <ClInclude Include="header\109-ConvertSortedListToBST.h" />
+    <ClInclude Include="header\114-FlattenBinaryTreeToList.h" />
     <ClInclude Include="header\204-countPrimes.h" />
     <ClInclude Include="header\22-GenerateParenthesis.h" />
     <ClInclude Include="header\222-CountCompleteTreeNodes.h" />

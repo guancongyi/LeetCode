@@ -73,6 +73,8 @@
 #include"435-NonOverlapping.h"
 #include"279-PerfectSquare.h"
 #include"101-SymmetricTree.h"
+#include"114-FlattenBinaryTreeToList.h"
+#include"109-ConvertSortedListToBST.h"
 
 using namespace std;
 
