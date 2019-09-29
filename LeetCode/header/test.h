@@ -75,6 +75,8 @@
 #include"101-SymmetricTree.h"
 #include"114-FlattenBinaryTreeToList.h"
 #include"109-ConvertSortedListToBST.h"
+#include"257-BinaryTreePath.h"
+#include"547-FriendCircleh.h"
 
 using namespace std;
 

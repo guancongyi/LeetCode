@@ -79,6 +79,8 @@
     <ClInclude Include="header\445-Add2Numbers.h" />
     <ClInclude Include="header\114-FlattenBinaryTreeToList.h" />
     <ClInclude Include="header\109-ConvertSortedListToBST.h" />
+    <ClInclude Include="header\257-BinaryTreePath.h" />
+    <ClInclude Include="header\547-FriendCircleh.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
