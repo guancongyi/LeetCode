@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="header\207-CourseSchedule.h" />
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>

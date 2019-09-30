@@ -84,5 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="header\207-CourseSchedule.h" />
   </ItemGroup>
 </Project>
