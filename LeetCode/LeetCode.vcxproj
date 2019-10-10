@@ -130,6 +130,7 @@
     <ClInclude Include="header\257-BinaryTreePath.h" />
     <ClInclude Include="header\279-PerfectSquare.h" />
     <ClInclude Include="header\285-InorderSuccessorInBST.h" />
+    <ClInclude Include="header\286-WallsAndGates.h" />
     <ClInclude Include="header\298_549-BTLongestConsecutive.h" />
     <ClInclude Include="header\376-WiggleSubsequence.h" />
     <ClInclude Include="header\380-InsertDelGetRandomO1.h" />
@@ -145,6 +146,7 @@
     <ClInclude Include="header\56-MergeIntervals.h" />
     <ClInclude Include="header\604-DesignCompressedStrIterator.h" />
     <ClInclude Include="header\724-FindPivotIndex.h" />
+    <ClInclude Include="header\733-FloodFill.h" />
     <ClInclude Include="header\763-PartitionLabel.h" />
     <ClInclude Include="header\766-ToeplitzMatrix.h" />
     <ClInclude Include="header\767-ReorganizeString.h" />

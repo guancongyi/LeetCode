@@ -78,6 +78,8 @@
 #include"257-BinaryTreePath.h"
 #include"547-FriendCircleh.h"
 #include"207-CourseSchedule.h"
+#include"733-FloodFill.h"
+#include"286-WallsAndGates.h"
 
 using namespace std;
 

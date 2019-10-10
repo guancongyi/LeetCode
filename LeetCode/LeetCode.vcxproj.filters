@@ -81,6 +81,8 @@
     <ClInclude Include="header\109-ConvertSortedListToBST.h" />
     <ClInclude Include="header\257-BinaryTreePath.h" />
     <ClInclude Include="header\547-FriendCircleh.h" />
+    <ClInclude Include="header\733-FloodFill.h" />
+    <ClInclude Include="header\286-WallsAndGates.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
