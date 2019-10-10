@@ -80,6 +80,9 @@
 #include"207-CourseSchedule.h"
 #include"733-FloodFill.h"
 #include"286-WallsAndGates.h"
+#include"207-CourseSchedule.h"
+#include"542-01Matrix.h"
+#include"70-ClimbingStairs.h"
 
 using namespace std;
 
@@ -800,3 +803,9 @@ void testPerfectSquare() {
 	s.numSquares(25);
 }
 
+
+void testzeroOneMat() {
+	zeroOneMatSolution s;
+	vector<vector<int>> vec({ {0,0,0},{0,1,0},{1,1,1} });
+	s.updateMatrix(vec);
+}

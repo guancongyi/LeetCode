@@ -83,9 +83,11 @@
     <ClInclude Include="header\547-FriendCircleh.h" />
     <ClInclude Include="header\733-FloodFill.h" />
     <ClInclude Include="header\286-WallsAndGates.h" />
+    <ClInclude Include="header\207-CourseSchedule.h" />
+    <ClInclude Include="header\542-01Matrix.h" />
+    <ClInclude Include="header\70-ClimbingStairs.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
-    <ClCompile Include="header\207-CourseSchedule.h" />
   </ItemGroup>
 </Project>

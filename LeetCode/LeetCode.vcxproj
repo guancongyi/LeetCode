@@ -115,7 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="header\207-CourseSchedule.h" />
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +124,7 @@
     <ClInclude Include="header\109-ConvertSortedListToBST.h" />
     <ClInclude Include="header\114-FlattenBinaryTreeToList.h" />
     <ClInclude Include="header\204-countPrimes.h" />
+    <ClInclude Include="header\207-CourseSchedule.h" />
     <ClInclude Include="header\22-GenerateParenthesis.h" />
     <ClInclude Include="header\222-CountCompleteTreeNodes.h" />
     <ClInclude Include="header\257-BinaryTreePath.h" />
@@ -141,10 +141,12 @@
     <ClInclude Include="header\435-NonOverlapping.h" />
     <ClInclude Include="header\452-MinimumNumberOfArrows.h" />
     <ClInclude Include="header\455-AssignCookies.h" />
+    <ClInclude Include="header\542-01Matrix.h" />
     <ClInclude Include="header\547-FriendCircleh.h" />
     <ClInclude Include="header\55-JumpGame.h" />
     <ClInclude Include="header\56-MergeIntervals.h" />
     <ClInclude Include="header\604-DesignCompressedStrIterator.h" />
+    <ClInclude Include="header\70-ClimbingStairs.h" />
     <ClInclude Include="header\724-FindPivotIndex.h" />
     <ClInclude Include="header\733-FloodFill.h" />
     <ClInclude Include="header\763-PartitionLabel.h" />

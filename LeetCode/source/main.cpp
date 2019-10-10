@@ -71,7 +71,8 @@ int main() {
 	//testAssignCookies();
 	//testReorganizeStr();
 	//testRemoveKDigits();
-	testPerfectSquare();
+	//testPerfectSquare();
+	testzeroOneMat();
 	return 0;
 }
 

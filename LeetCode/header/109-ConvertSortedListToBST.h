@@ -1,4 +1,4 @@
-class Solution {
+class SortedListToBSTSolution {
 public:
 	TreeNode* sortedListToBST(ListNode* head) {
 		vector<int> vec;
