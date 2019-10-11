@@ -86,6 +86,7 @@
     <ClInclude Include="header\207-CourseSchedule.h" />
     <ClInclude Include="header\542-01Matrix.h" />
     <ClInclude Include="header\70-ClimbingStairs.h" />
+    <ClInclude Include="header\329-LongestIncreasingPath.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />

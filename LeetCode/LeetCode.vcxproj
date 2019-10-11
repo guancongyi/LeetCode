@@ -132,6 +132,7 @@
     <ClInclude Include="header\285-InorderSuccessorInBST.h" />
     <ClInclude Include="header\286-WallsAndGates.h" />
     <ClInclude Include="header\298_549-BTLongestConsecutive.h" />
+    <ClInclude Include="header\329-LongestIncreasingPath.h" />
     <ClInclude Include="header\376-WiggleSubsequence.h" />
     <ClInclude Include="header\380-InsertDelGetRandomO1.h" />
     <ClInclude Include="header\3_159_340LongestSubstring.h" />

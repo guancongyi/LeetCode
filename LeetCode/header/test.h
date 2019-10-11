@@ -83,6 +83,7 @@
 #include"207-CourseSchedule.h"
 #include"542-01Matrix.h"
 #include"70-ClimbingStairs.h"
+#include"329-LongestIncreasingPath.h"
 
 using namespace std;
 
@@ -802,7 +803,6 @@ void testPerfectSquare() {
 	PerfectSquareSolution s;
 	s.numSquares(25);
 }
-
 
 void testzeroOneMat() {
 	zeroOneMatSolution s;
