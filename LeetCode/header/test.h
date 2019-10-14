@@ -84,6 +84,7 @@
 #include"542-01Matrix.h"
 #include"70-ClimbingStairs.h"
 #include"329-LongestIncreasingPath.h"
+#include"198-HouseRobber.h"
 
 using namespace std;
 

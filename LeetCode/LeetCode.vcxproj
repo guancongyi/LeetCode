@@ -123,6 +123,7 @@
     <ClInclude Include="header\1057-CampusBike.h" />
     <ClInclude Include="header\109-ConvertSortedListToBST.h" />
     <ClInclude Include="header\114-FlattenBinaryTreeToList.h" />
+    <ClInclude Include="header\198-HouseRobber.h" />
     <ClInclude Include="header\204-countPrimes.h" />
     <ClInclude Include="header\207-CourseSchedule.h" />
     <ClInclude Include="header\22-GenerateParenthesis.h" />
