@@ -85,6 +85,8 @@
 #include"70-ClimbingStairs.h"
 #include"329-LongestIncreasingPath.h"
 #include"198-HouseRobber.h"
+#include"338-CountingBits.h"
+#include "743-NetworkDelay.h"
 
 using namespace std;
 
@@ -809,4 +811,12 @@ void testzeroOneMat() {
 	zeroOneMatSolution s;
 	vector<vector<int>> vec({ {0,0,0},{0,1,0},{1,1,1} });
 	s.updateMatrix(vec);
+}
+
+void testNetworkDelay() {
+	vector<vector<int>> times = { {1, 2, 1},{2, 3, 2},{1,3,2} };
+	int N = 3;
+	int K = 1;
+	networkDelayTimeSolution s;
+	s.networkDelayTime(times, N, K);
 }

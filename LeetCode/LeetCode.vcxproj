@@ -134,6 +134,7 @@
     <ClInclude Include="header\286-WallsAndGates.h" />
     <ClInclude Include="header\298_549-BTLongestConsecutive.h" />
     <ClInclude Include="header\329-LongestIncreasingPath.h" />
+    <ClInclude Include="header\338-CountingBits.h" />
     <ClInclude Include="header\376-WiggleSubsequence.h" />
     <ClInclude Include="header\380-InsertDelGetRandomO1.h" />
     <ClInclude Include="header\3_159_340LongestSubstring.h" />
@@ -151,6 +152,7 @@
     <ClInclude Include="header\70-ClimbingStairs.h" />
     <ClInclude Include="header\724-FindPivotIndex.h" />
     <ClInclude Include="header\733-FloodFill.h" />
+    <ClInclude Include="header\743-NetworkDelay.h" />
     <ClInclude Include="header\763-PartitionLabel.h" />
     <ClInclude Include="header\766-ToeplitzMatrix.h" />
     <ClInclude Include="header\767-ReorganizeString.h" />

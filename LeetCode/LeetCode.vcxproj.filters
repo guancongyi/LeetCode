@@ -88,6 +88,8 @@
     <ClInclude Include="header\70-ClimbingStairs.h" />
     <ClInclude Include="header\329-LongestIncreasingPath.h" />
     <ClInclude Include="header\198-HouseRobber.h" />
+    <ClInclude Include="header\338-CountingBits.h" />
+    <ClInclude Include="header\743-NetworkDelay.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />

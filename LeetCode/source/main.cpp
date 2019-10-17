@@ -72,7 +72,8 @@ int main() {
 	//testReorganizeStr();
 	//testRemoveKDigits();
 	//testPerfectSquare();
-	testzeroOneMat();
+	//testzeroOneMat();
+	testNetworkDelay();
 	return 0;
 }
 
