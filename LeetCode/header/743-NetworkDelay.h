@@ -3,7 +3,7 @@ class Compare
 public:
 	bool operator() (const vector<int>& v1, const vector<int>& v2)
 	{
-		return v1[2] > v2[2];
+		return v1[1] > v2[1];
 	}
 };
 
@@ -14,33 +14,29 @@ public:
 		map<int, int> weights;
 		map<int, int> visited;
 		for (int i = 0; i < times.size(); i++) {
-			if (adjList.find(times[i][0]) == adjList.end()) {
-				vector<vector<int>> temp = { {times[i][0], times[i][1], times[i][2]} };
-				adjList[times[i][0]] = temp;
-				weights[times[i][0]] = INT_MAX;
-				weights[times[i][1]] = INT_MAX;
-			}
-			else
-				adjList[times[i][0]].push_back({ times[i][0], times[i][1], times[i][2] });
+			weights[times[i][0]] = INT_MAX;
+			weights[times[i][1]] = INT_MAX;
+			adjList[times[i][0]].push_back({ times[i][1], times[i][2] });
 		}
 
 		weights[K] = 0;
 		priority_queue<vector<int>, std::vector<vector<int>>, Compare> pq;
-		pq.push({ K,K,0 });
+		pq.push({ K,0 });
 
 		while (pq.size() != 0) {
 			auto cur = pq.top();
 			pq.pop();
-			visited[cur[1]] = 1;
-			auto neighbors = adjList[cur[1]];
+			//cout << cur[0] << endl;
+			auto neighbors = adjList[cur[0]];
+			if (visited[cur[0]]) continue;
 			for (auto i = 0; i < neighbors.size(); i++) {
 				auto neighbor = neighbors[i];
-				if (!visited[neighbor[1]]) {
-					if ((weights[neighbor[0]] + neighbor[2]) < weights[neighbor[1]])
-						weights[neighbor[1]] = weights[neighbor[0]] + neighbor[2];
-					pq.push(neighbor);
-				}
+				if ((weights[cur[0]] + neighbor[1]) < weights[neighbor[0]])
+					weights[neighbor[0]] = weights[cur[0]] + neighbor[1];
+				pq.push({ neighbor[0],weights[cur[0]] + neighbor[1] });
+
 			}
+			visited[cur[0]] = 1;
 		}
 
 		int total = INT_MIN;

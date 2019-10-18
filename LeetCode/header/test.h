@@ -814,9 +814,9 @@ void testzeroOneMat() {
 }
 
 void testNetworkDelay() {
-	vector<vector<int>> times = { {1, 2, 1},{2, 3, 2},{1,3,2} };
-	int N = 3;
-	int K = 1;
+	vector<vector<int>> times = { {2, 1, 1},{2, 3, 1},{3,4,1} };
+	int N = 4;
+	int K = 2;
 	networkDelayTimeSolution s;
 	s.networkDelayTime(times, N, K);
 }
