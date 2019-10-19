@@ -90,6 +90,8 @@
     <ClInclude Include="header\198-HouseRobber.h" />
     <ClInclude Include="header\338-CountingBits.h" />
     <ClInclude Include="header\743-NetworkDelay.h" />
+    <ClInclude Include="header\746-MinCostClimbingStairs.h" />
+    <ClInclude Include="header\787-CheapestFlightWithKStops.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />

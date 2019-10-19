@@ -1,8 +1,7 @@
 class Compare
 {
 public:
-	bool operator() (const vector<int>& v1, const vector<int>& v2)
-	{
+	bool operator() (const vector<int>& v1, const vector<int>& v2){
 		return v1[1] > v2[1];
 	}
 };

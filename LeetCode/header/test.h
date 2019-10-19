@@ -87,6 +87,8 @@
 #include"198-HouseRobber.h"
 #include"338-CountingBits.h"
 #include "743-NetworkDelay.h"
+#include"746-MinCostClimbingStairs.h"
+#include"787-CheapestFlightWithKStops.h"
 
 using namespace std;
 

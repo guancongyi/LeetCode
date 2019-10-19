@@ -153,9 +153,11 @@
     <ClInclude Include="header\724-FindPivotIndex.h" />
     <ClInclude Include="header\733-FloodFill.h" />
     <ClInclude Include="header\743-NetworkDelay.h" />
+    <ClInclude Include="header\746-MinCostClimbingStairs.h" />
     <ClInclude Include="header\763-PartitionLabel.h" />
     <ClInclude Include="header\766-ToeplitzMatrix.h" />
     <ClInclude Include="header\767-ReorganizeString.h" />
+    <ClInclude Include="header\787-CheapestFlightWithKStops.h" />
     <ClInclude Include="header\993-CousinsInBT.h" />
     <ClInclude Include="header\445-Add2Numbers.h" />
     <ClInclude Include="header\AkunaC++.h" />
